@@ -331,16 +331,16 @@ export default function HomePage({ page }) {
             <div className="about-section">
               <div className="about-image">
                 <img
-                  src="/images/perlemama-pearl-perfect-white-drop-of-milk.jpg"
+                  src="/images/perlemama-pearl-perfect-white-drop-of-milk.png"
                   alt={
                     af
                       ? 'PerleMama — ’n pêrel, perfek en wit soos ’n druppel melk'
                       : 'PerleMama — a pearl, perfect and white like a drop of milk'
                   }
                   title="a pearl, perfect & white like a drop of milk — PerleMama"
-                  className="about-image-img about-image-img-centered"
-                  width={1024}
-                  height={1100}
+                  className="about-image-img about-image-img-graphic"
+                  width={819}
+                  height={1024}
                 />
               </div>
               <div className="about-text-content">

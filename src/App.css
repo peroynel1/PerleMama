@@ -365,6 +365,12 @@
   object-position: center;
 }
 
+.about-image-img-graphic {
+  object-fit: contain;
+  object-position: center;
+  background: #f2cfd4;
+}
+
 .about-text-content {
   display: flex;
   flex-direction: column;
