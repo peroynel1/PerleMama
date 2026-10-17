@@ -1,5 +1,8 @@
 export const SITE_URL = 'https://perlemamalactation.co.za'
 export const SITE_NAME = 'PerleMama Lactation'
+export const LOGO_PATH = '/images/perlemama-lactation-logo.jpg'
+export const FAVICON_PATH = '/images/perlemama-lactation-favicon.png'
+export const OG_IMAGE = `${SITE_URL}/images/perlemama-lactation-logo.jpg`
 export const PHONE_DISPLAY = '076 183 6080'
 export const PHONE_E164 = '+27761836080'
 export const WHATSAPP_URL =
@@ -8,6 +11,7 @@ export const WHATSAPP_URL =
     'Hi Annette, I would like to book a breastfeeding consult. Baby age: ___. Main concern: ___. Preferred: home visit / online / Stellenbosch.',
   )
 export const FACEBOOK_URL = 'https://www.facebook.com/398919377142731'
+export const INSTAGRAM_URL = 'https://www.instagram.com/laperlemama/'
 export const EMAIL = '' // add when public
 export const NAP = {
   name: 'PerleMama Lactation',

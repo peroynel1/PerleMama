@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import { QuoteStrip } from '../components/QuoteFiller'
 import { testimonials } from '../data/testimonials'
 import { blogPosts, blogPath } from '../data/blog'
-import { FACEBOOK_URL, WHATSAPP_URL } from '../config/site'
+import { FACEBOOK_URL, INSTAGRAM_URL, WHATSAPP_URL } from '../config/site'
 import '../App.css'
 
 export default function HomePage({ page }) {
@@ -45,7 +46,6 @@ export default function HomePage({ page }) {
     resetTestimonialTimer()
   }
 
-  const t = testimonials[currentTestimonial]
   const topic = topics[currentTopic]
 
   const bookPath = af ? '/af/boek/' : '/book/'
@@ -86,15 +86,21 @@ export default function HomePage({ page }) {
           <div className="services-grid">
             <Link to={onlinePath} className="service-card service-card-link">
               <div className="service-image">
-                <img src="/images/3.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/online-breastfeeding-consultation.jpg"
+                  alt={
+                    af
+                      ? 'Aanlyn borsvoeding konsultasie hulpbronne — PerleMama Lactation'
+                      : 'Online breastfeeding consultation resources — PerleMama Lactation'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Video-sessie' : 'Video session'}</h3>
               <p>
                 <strong>
                   {af ? '60 minute via videogesprek.' : '60 minutes via video call.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Wil jy nie jou bed of bank verlaat nie? ’n Videokonsultasie is ’n gerieflike alternatief vir reis! Ons bespreek jou uitdagings en skep ’n doenbare plan. Sluit in ’n voedingwaarneming, relevante hulpbronne, sessienotas en sorgplan, en teks-opvolg.'
                   : "Don't want to leave your bed or couch? A video consultation is a convenient alternative to travelling! We discuss your challenges and create a doable plan to achieve your goals. Includes a feeding observation, relevant written, graphic and video resources to further assist you, your session notes and care plan, and a text based follow up."}
@@ -102,7 +108,15 @@ export default function HomePage({ page }) {
             </Link>
             <Link to={clinicPath} className="service-card service-card-link">
               <div className="service-image">
-                <img src="/images/2.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/stellenbosch-lactation-home-office.jpg"
+                  alt={
+                    af
+                      ? 'Stellenbosch laktasie huis & kantoor — in-persoon borsvoeding konsultasie'
+                      : 'Stellenbosch lactation home office — in-person breastfeeding consultation'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Kom na my…' : 'Come to me...'}</h3>
               <p>
@@ -111,8 +125,6 @@ export default function HomePage({ page }) {
                     ? '60 – 80 minute by my huis & kantoor in Stellenbosch.'
                     : '60 - 80 minutes at my home & office in Stellenbosch.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Kom binne! Ons bespreek jou uitdagings en skep ’n doenbare plan. Sluit in ’n voedingwaarneming en geleide mondassessering, praktiese demonstrasies, hulpbronne, sessienotas en sorgplan, en teks-opvolg.'
                   : 'Come on in! We discuss your challenges and create a doable plan to achieve your goals. Includes a feeding observation and guided oral assessment, practical demonstrations, relevant written, graphic and video resources to further assist you, your session notes and care plan, and a text based follow up.'}
@@ -120,7 +132,15 @@ export default function HomePage({ page }) {
             </Link>
             <Link to={homeVisitPath} className="service-card service-card-link">
               <div className="service-image">
-                <img src="/images/1.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/breastfeeding-home-visit-western-cape.jpg"
+                  alt={
+                    af
+                      ? 'Borsvoeding huisbesoek in die Wes-Kaap — PerleMama Lactation'
+                      : 'Breastfeeding home visit in the Western Cape — PerleMama Lactation'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Of ek kom na jou!' : 'Or I come to you!'}</h3>
               <p>
@@ -129,8 +149,6 @@ export default function HomePage({ page }) {
                     ? '60 – 90 minute by jou huis of hospitaal.'
                     : '60 - 90 minutes at your home or hospital.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Kom ons bespreek jou uitdagings en skep ’n doenbare plan. Sluit in ’n voedingwaarneming en mondassessering, praktiese demonstrasies, hulpbronne, sessienotas en sorgplan, en teks-opvolg. Reisfooie geld.'
                   : "Let's discuss your challenges and create a doable plan to achieve your goals. Includes a feeding observation and oral assessment, practical demonstrations, relevant written, graphic and video resources to further assist you, your session notes and care plan, and a text based follow up. Travel rates apply."}
@@ -146,7 +164,15 @@ export default function HomePage({ page }) {
           <div className="services-grid">
             <div className="service-card">
               <div className="service-image">
-                <img src="/images/3.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/online-breastfeeding-consultation.jpg"
+                  alt={
+                    af
+                      ? 'WhatsApp teks-ondersteuning ná borsvoeding konsultasie'
+                      : 'WhatsApp text support after a breastfeeding consultation'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Teks-ondersteuning' : 'Text support'}</h3>
               <p>
@@ -155,8 +181,6 @@ export default function HomePage({ page }) {
                     ? 'Opvolg en vrae tussen sessies via WhatsApp.'
                     : 'Follow-up and questions between sessions via WhatsApp.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Na ’n konsultasie bly ek beskikbaar vir teks-gebaseerde steun sodat jy nie alleen voel met die volgende vraag nie. Tariewe en pakkette op aanvraag.'
                   : 'After a consult I stay available for text-based support so you are not alone with the next question. Rates and packages on enquiry.'}
@@ -164,7 +188,15 @@ export default function HomePage({ page }) {
             </div>
             <div className="service-card">
               <div className="service-image">
-                <img src="/images/2.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/stellenbosch-lactation-home-office.jpg"
+                  alt={
+                    af
+                      ? 'Voorgeborete borsvoeding voorbereiding in Stellenbosch'
+                      : 'Pre-birth breastfeeding preparation in Stellenbosch'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Voorgeborete voorbereiding' : 'Pre-birth prep'}</h3>
               <p>
@@ -173,8 +205,6 @@ export default function HomePage({ page }) {
                     ? 'Borsvoeding-voorbereiding vóór baba kom.'
                     : 'Breastfeeding preparation before baby arrives.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Leer wat om te verwag in die eerste dae, hoe aanhaking werk, en hoe om jou ondersteuningstelsel gereed te kry — virtueel of in Stellenbosch.'
                   : 'Learn what to expect in the early days, how latch works, and how to set up your support system — online or in Stellenbosch.'}
@@ -185,7 +215,15 @@ export default function HomePage({ page }) {
               className="service-card service-card-link"
             >
               <div className="service-image">
-                <img src="/images/1.jpg" alt="" className="service-image-img" />
+                <img
+                  src="/images/breastfeeding-home-visit-western-cape.jpg"
+                  alt={
+                    af
+                      ? 'Spesialiteit borsvoeding sessie — pomp, terug werk toe, refluks'
+                      : 'Specialty breastfeeding session — pumping, back to work, reflux'
+                  }
+                  className="service-image-img"
+                />
               </div>
               <h3>{af ? 'Spesialiteit-sessie' : 'Speciality session'}</h3>
               <p>
@@ -194,8 +232,6 @@ export default function HomePage({ page }) {
                     ? 'Terug werk toe, pomp, refluks, en meer.'
                     : 'Back to work, pumping, reflux, and more.'}
                 </strong>
-                <br />
-                <br />
                 {af
                   ? 'Gefokusde sessies vir spesifieke uitdagings — soos terug werk toe en pomp — met ’n duidelike plan en opvolg.'
                   : 'Focused sessions for specific challenges — like returning to work and pumping — with a clear plan and follow-up.'}
@@ -212,9 +248,18 @@ export default function HomePage({ page }) {
           <div className="about-card">
             <div className="about-section">
               <div className="about-image">
-                <div className="placeholder-image">
-                  {af ? 'Foto binnekort' : 'Image Placeholder'}
-                </div>
+                <img
+                  src="/images/annette-nel-lactation-counselor-stellenbosch.jpg"
+                  alt={
+                    af
+                      ? 'Annette Nel, Lactation Counselor (LC, CBI) in Stellenbosch — PerleMama Lactation'
+                      : 'Annette Nel, Lactation Counselor (LC, CBI) in Stellenbosch — PerleMama Lactation'
+                  }
+                  title="Annette Nel — Lactation Counselor Stellenbosch"
+                  className="about-image-img"
+                  width={819}
+                  height={880}
+                />
               </div>
               <div className="about-text-content">
                 <h3 className="about-subtitle">
@@ -268,9 +313,18 @@ export default function HomePage({ page }) {
                 </p>
               </div>
               <div className="about-image">
-                <div className="placeholder-image">
-                  {af ? 'Foto binnekort' : 'Image Placeholder'}
-                </div>
+                <img
+                  src="/images/annette-nel-mother-newborn-breastfeeding-support.png"
+                  alt={
+                    af
+                      ? 'Annette Nel met ’n baba — borsvoeding ondersteuning en moederlike sorg, Stellenbosch'
+                      : 'Annette Nel with a newborn — breastfeeding support and maternal care, Stellenbosch'
+                  }
+                  title="Annette Nel — breastfeeding support for mothers and newborns"
+                  className="about-image-img"
+                  width={819}
+                  height={942}
+                />
               </div>
             </div>
           </div>
@@ -292,16 +346,24 @@ export default function HomePage({ page }) {
               ‹
             </button>
             <div className="testimonial-content">
-              <div className="testimonial-text">
-                <strong className="section-title-2">{t.quote}</strong>
-                <p>
-                  <br />"{t.text}"
-                </p>
-              </div>
-              <div className="testimonial-author">
-                <p className="author-name">{t.author}</p>
-                <p className="author-role">{t.role}</p>
-              </div>
+              {testimonials.map((item, index) => (
+                <div
+                  key={`${item.author}-${item.role}`}
+                  className={`testimonial-slide${index === currentTestimonial ? ' is-active' : ''}`}
+                  aria-hidden={index !== currentTestimonial}
+                >
+                  <div className="testimonial-text">
+                    <strong className="section-title-2">{item.quote}</strong>
+                    <p>
+                      <br />"{item.text}"
+                    </p>
+                  </div>
+                  <div className="testimonial-author">
+                    <p className="author-name">{item.author}</p>
+                    <p className="author-role">{item.role}</p>
+                  </div>
+                </div>
+              ))}
             </div>
             <button
               className="carousel-button carousel-button-next"
@@ -328,6 +390,8 @@ export default function HomePage({ page }) {
           </div>
         </div>
       </section>
+
+      <QuoteStrip seed={af ? 'home-af' : 'home-en'} lang={page.lang} />
 
       <section id="resources" className="resources">
         <div className="container">
@@ -399,6 +463,11 @@ export default function HomePage({ page }) {
           <h2 className="section-title">
             {af ? 'Kom in kontak' : 'Get in contact'}
           </h2>
+          <p className="content-book-lead" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+            <Link to={af ? '/af/vind-my/' : '/find-me/'} className="blog-read-more">
+              {af ? 'Waar om my te vind →' : 'Where to find me →'}
+            </Link>
+          </p>
           <div className="social-links">
             <a
               href={WHATSAPP_URL}
@@ -429,6 +498,21 @@ export default function HomePage({ page }) {
                 />
               </svg>
               <span>Facebook</span>
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              aria-label="Instagram"
+            >
+              <svg className="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Instagram</span>
             </a>
           </div>
         </div>

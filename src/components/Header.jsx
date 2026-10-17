@@ -26,8 +26,8 @@ function Header() {
       <div className="container header-bar">
         <div className="logo-container">
           <img
-            src="/images/logo.jpg"
-            alt=""
+            src="/images/perlemama-lactation-logo.jpg"
+            alt="PerleMama Lactation — Annette Nel, LC (CBI), Stellenbosch"
             className="logo-img"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
@@ -75,6 +75,9 @@ function Header() {
           </Link>
           <Link to="/blog/" onClick={closeMenu}>
             Blog
+          </Link>
+          <Link to={`${prefix}${af ? '/vind-my/' : '/find-me/'}`} onClick={closeMenu}>
+            {af ? 'Vind my' : 'Find me'}
           </Link>
           <Link
             to={`${prefix}${af ? '/boek/' : '/book/'}`}

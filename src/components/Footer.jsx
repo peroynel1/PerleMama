@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-import { FACEBOOK_URL, PHONE_DISPLAY, SITE_NAME, WHATSAPP_URL } from '../config/site'
+import { FACEBOOK_URL, INSTAGRAM_URL, PHONE_DISPLAY, SITE_NAME, WHATSAPP_URL } from '../config/site'
 
 export default function Footer({ lang = 'en' }) {
   const af = lang === 'af'
   const home = af ? '/af/' : '/'
   const book = af ? '/af/boek/' : '/book/'
   const about = af ? '/af/oor-my/' : '/about/'
+  const findMe = af ? '/af/vind-my/' : '/find-me/'
 
   return (
     <footer className="footer">
@@ -25,6 +26,10 @@ export default function Footer({ lang = 'en' }) {
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
               Facebook
             </a>
+            {' · '}
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
           </p>
         </div>
         <div>
@@ -36,6 +41,9 @@ export default function Footer({ lang = 'en' }) {
           </p>
           <p>
             <Link to={book}>{af ? 'Bespreek' : 'Book'}</Link>
+          </p>
+          <p>
+            <Link to={findMe}>{af ? 'Vind my' : 'Find me'}</Link>
           </p>
           <p>
             <Link to={af ? '/' : '/af/'}>{af ? 'English' : 'Afrikaans'}</Link>

@@ -46,7 +46,7 @@
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
   flex-shrink: 0;
 }
 
@@ -232,7 +232,7 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 5rem;
   margin-top: 6rem;
 }
 
@@ -290,6 +290,12 @@
   font-family: 'Glacial Indifference', sans-serif;
   color: #555;
   line-height: 1.8;
+  margin: 0;
+}
+
+.service-card p strong {
+  display: block;
+  margin-bottom: 0.35rem;
 }
 
 /* About Section */
@@ -345,17 +351,13 @@
   overflow: hidden;
 }
 
-.placeholder-image {
+.about-image-img {
   width: 100%;
   height: 100%;
   min-height: 300px;
-  background: linear-gradient(135deg, rgba(255, 237, 245, 0.8) 0%, rgba(240, 196, 216, 0.8) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1.1rem;
-  color: #777;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
   border-radius: 15px;
 }
 
@@ -399,7 +401,6 @@
   border: 1px solid rgba(255, 245, 225, 0.7);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 3rem 4rem;
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -407,8 +408,22 @@
 }
 
 .testimonial-content {
+  display: grid;
   text-align: center;
   width: 100%;
+}
+
+/* Stack every slide in one cell — height = tallest quote */
+.testimonial-slide {
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-slide:not(.is-active) {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .testimonial-text {
@@ -863,6 +878,7 @@
   .services-grid {
     margin-top: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 5rem;
   }
 }
 
@@ -896,7 +912,8 @@
   .services-grid {
     grid-template-columns: 1fr;
     margin-top: 4rem;
-    gap: 3.5rem;
+    /* Circle hangs 60px above each card — gap must clear that */
+    gap: 6rem;
   }
 
   .logo-img {
@@ -922,7 +939,7 @@
   }
 
   .about-subtitle {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .about-text {
@@ -1038,23 +1055,28 @@
   line-height: 1.2;
 }
 
+.content-reviews-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .content-reviews {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  margin: 1.75rem 0 2rem;
+  margin: 0;
   text-align: left;
 }
 
 .content-review-card {
   margin: 0;
   padding: 1.25rem 1.35rem;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 245, 225, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 245, 225, 0.7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   font-family: 'Glacial Indifference', 'Source Sans 3', sans-serif;
   color: #555;
 }
@@ -1140,7 +1162,8 @@
   font-family: 'Tan Pearl', 'Playfair Display', Georgia, serif;
   font-size: 1.1rem;
   list-style-position: outside;
-  padding: 0.25rem 0;
+  margin-left: 1.1rem;
+  padding: 0.25rem 0 0.25rem 0.35rem;
 }
 
 .content-faq-item summary:hover {
@@ -1262,6 +1285,62 @@
 .form-note a {
   color: #333;
   font-weight: 600;
+}
+
+.connect-channels-grid {
+  margin-top: 0;
+}
+
+.connect-areas-card {
+  margin-top: 2.5rem;
+  max-width: 800px;
+}
+
+.connect-areas-card .section-title-2 {
+  margin-bottom: 1rem;
+}
+
+.quote-filler-section {
+  padding: 2.5rem 0 3rem;
+}
+
+.quote-filler {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.quote-filler-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.quote-filler-gallery .section-title {
+  margin-bottom: 2rem;
+}
+
+.quote-filler-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.quote-filler-grid .quote-filler {
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .quote-filler {
+    max-width: 360px;
+  }
+
+  .quote-filler-section {
+    padding: 2rem 0;
+  }
 }
 
 .whatsapp-sticky {

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { SITE_NAME, SITE_URL } from '../config/site'
+import { SITE_NAME, SITE_URL, OG_IMAGE, FACEBOOK_URL, INSTAGRAM_URL } from '../config/site'
 import { absoluteUrl } from '../data/pages'
 
 function upsertMeta(attr, key, content) {
@@ -47,9 +47,11 @@ export default function Seo({ page }) {
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:site_name', SITE_NAME)
     upsertMeta('property', 'og:locale', page.lang === 'af' ? 'af_ZA' : 'en_ZA')
-    upsertMeta('name', 'twitter:card', 'summary')
+    upsertMeta('property', 'og:image', OG_IMAGE)
+    upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', page.title)
     upsertMeta('name', 'twitter:description', page.description)
+    upsertMeta('name', 'twitter:image', OG_IMAGE)
 
     const schema = {
       '@context': 'https://schema.org',
@@ -60,6 +62,9 @@ export default function Seo({ page }) {
           name: SITE_NAME,
           url: SITE_URL,
           telephone: '+27761836080',
+          image: OG_IMAGE,
+          logo: OG_IMAGE,
+          sameAs: [FACEBOOK_URL, INSTAGRAM_URL],
           areaServed: ['Stellenbosch', 'Western Cape', 'South Africa'],
           address: {
             '@type': 'PostalAddress',

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -20,6 +21,16 @@ function PageById({ page }) {
   return <ContentPage page={page} />
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 function Shell() {
   const { pathname } = useLocation()
   const page = getPageByPath(pathname)
@@ -32,6 +43,7 @@ function Shell() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/blog" element={<BlogIndex />} />

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import { QuoteStrip } from '../components/QuoteFiller'
 import { blogPosts, blogPath } from '../data/blog'
 import { SITE_NAME } from '../config/site'
 
@@ -51,6 +52,8 @@ export default function BlogIndex() {
           </div>
         </div>
       </section>
+
+      <QuoteStrip seed="blog-index" lang="en" />
     </main>
   )
 }

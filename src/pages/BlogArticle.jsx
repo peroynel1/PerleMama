@@ -1,5 +1,6 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import Seo from '../components/Seo'
+import { QuoteStrip } from '../components/QuoteFiller'
 import { getPost, blogPath } from '../data/blog'
 import { WHATSAPP_URL, SITE_NAME } from '../config/site'
 
@@ -59,6 +60,8 @@ export default function BlogArticle() {
           </div>
         </div>
       </section>
+
+      <QuoteStrip seed={post.slug} lang={post.lang} />
 
       <section className="services content-book-section">
         <div className="container">

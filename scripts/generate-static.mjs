@@ -9,9 +9,13 @@ import { blogPosts, blogPath, blogAbsoluteUrl } from '../src/data/blog.js'
 import {
   SITE_NAME,
   SITE_URL,
+  OG_IMAGE,
+  LOGO_PATH,
+  FAVICON_PATH,
   PHONE_DISPLAY,
   WHATSAPP_URL,
   FACEBOOK_URL,
+  INSTAGRAM_URL,
 } from '../src/config/site.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -70,6 +74,7 @@ function buildBody(page) {
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>
   <p><a href="${FACEBOOK_URL}">Facebook</a></p>
+  <p><a href="${INSTAGRAM_URL}">Instagram</a></p>
 </article>`
   }
 
@@ -97,6 +102,9 @@ function buildHead(page) {
         name: SITE_NAME,
         url: SITE_URL,
         telephone: '+27761836080',
+        image: OG_IMAGE,
+        logo: OG_IMAGE,
+        sameAs: [FACEBOOK_URL, INSTAGRAM_URL],
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Stellenbosch',
@@ -129,8 +137,8 @@ function buildHead(page) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${escapeHtml(page.title)}</title>
 <meta name="description" content="${escapeHtml(page.description)}" />
-<link rel="icon" type="image/jpeg" href="/images/logo.jpg" />
-<link rel="apple-touch-icon" href="/images/logo.jpg" />
+<link rel="icon" type="image/png" href="${FAVICON_PATH}" />
+<link rel="apple-touch-icon" href="${FAVICON_PATH}" />
 <link rel="canonical" href="${url}" />
 <link rel="alternate" hreflang="${lang}" href="${url}" />
 <link rel="alternate" hreflang="${altLang}" href="${alt}" />
@@ -141,6 +149,9 @@ function buildHead(page) {
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${SITE_NAME}" />
 <meta property="og:locale" content="${page.lang === 'af' ? 'af_ZA' : 'en_ZA'}" />
+<meta property="og:image" content="${OG_IMAGE}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="${OG_IMAGE}" />
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
 ${assetTags.join('\n')}
 `
@@ -225,6 +236,8 @@ const llms = `# PerleMama Lactation
 Site: ${SITE_URL}
 Phone / WhatsApp: ${PHONE_DISPLAY}
 Facebook: ${FACEBOOK_URL}
+Instagram: ${INSTAGRAM_URL}
+Find me / link hub: ${SITE_URL}/find-me/
 
 ## Services
 

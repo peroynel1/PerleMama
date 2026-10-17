@@ -165,6 +165,33 @@ export const pages = [
     type: 'book',
   },
   {
+    id: 'find-me-en',
+    path: '/find-me/',
+    lang: 'en',
+    hreflangPath: '/af/vind-my/',
+    title: 'Where to find PerleMama Lactation | WhatsApp, Instagram, Facebook',
+    description:
+      'Contact Annette Nel, LC (CBI): WhatsApp booking, Instagram @laperlemama, Facebook, phone, and Stellenbosch / Western Cape service areas.',
+    h1: 'Where to find me',
+    lead:
+      'The fastest way to book is WhatsApp. Follow along on Instagram and Facebook for tips, and come see me in Stellenbosch or online.',
+    type: 'connect',
+    body: [
+      'I am based in Stellenbosch and support families across the Winelands and Helderberg — plus online consults anywhere in South Africa.',
+      'Use this page as your link hub: WhatsApp for bookings, Instagram and Facebook for updates, and the website for services and help topics.',
+    ],
+    faqs: [
+      {
+        q: 'What is the quickest way to book?',
+        a: 'WhatsApp. Share baby’s age, your main concern, and whether you prefer a home visit, online session, or Stellenbosch visit.',
+      },
+      {
+        q: 'Where do you practise?',
+        a: 'Stellenbosch home office for in-person sessions, home visits in the Western Cape (travel rates may apply), and video consults nationwide.',
+      },
+    ],
+  },
+  {
     id: 'resources-en',
     path: '/resources/',
     lang: 'en',
@@ -458,6 +485,33 @@ export const pages = [
     h1: 'Bespreek ’n konsultasie',
     lead: 'Deel ’n paar besonderhede en ek antwoord op WhatsApp met beskikbaarheid en tariewe.',
     type: 'book',
+  },
+  {
+    id: 'find-me-af',
+    path: '/af/vind-my/',
+    lang: 'af',
+    hreflangPath: '/find-me/',
+    title: 'Waar om PerleMama Lactation te vind | WhatsApp, Instagram, Facebook',
+    description:
+      'Kontak Annette Nel, LC (CBI): WhatsApp-besprekings, Instagram @laperlemama, Facebook, foon, en Stellenbosch / Wes-Kaap diensareas.',
+    h1: 'Waar om my te vind',
+    lead:
+      'Die vinnigste manier om te bespreek is WhatsApp. Volg Instagram en Facebook vir wenke, en kom sien my in Stellenbosch of aanlyn.',
+    type: 'connect',
+    body: [
+      'Ek is in Stellenbosch gebaseer en help gesinne in die Wynland en Helderberg — plus aanlyn konsultasies oral in Suid-Afrika.',
+      'Gebruik hierdie bladsy as jou skakel-hub: WhatsApp vir besprekings, Instagram en Facebook vir opdaterings, en die webwerf vir dienste en hulponderwerpe.',
+    ],
+    faqs: [
+      {
+        q: 'Wat is die vinnigste manier om te bespreek?',
+        a: 'WhatsApp. Deel baba se ouderdom, jou hoofkwessie, en of jy huisbesoek, aanlyn of Stellenbosch verkies.',
+      },
+      {
+        q: 'Waar praktiseer jy?',
+        a: 'Stellenbosch huis & kantoor vir in-persoon sessies, huisbesoeke in die Wes-Kaap (reisfooie kan geld), en video oral in Suid-Afrika.',
+      },
+    ],
   },
   {
     id: 'resources-af',

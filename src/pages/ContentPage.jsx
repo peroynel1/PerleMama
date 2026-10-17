@@ -1,23 +1,118 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
 import BookingForm from '../components/BookingForm'
+import { QuoteStrip, QuoteGallery } from '../components/QuoteFiller'
 import { testimonials } from '../data/testimonials'
 import { getProblemPages, getServicePages } from '../data/pages'
-import { WHATSAPP_URL } from '../config/site'
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  PHONE_DISPLAY,
+  PHONE_E164,
+  SERVICE_AREAS,
+  SITE_URL,
+  WHATSAPP_URL,
+} from '../config/site'
+
+function ConnectChannels({ lang }) {
+  const af = lang === 'af'
+  const channels = [
+    {
+      name: 'WhatsApp',
+      href: WHATSAPP_URL,
+      detail: af ? 'Besprekings en vinnige vrae' : 'Bookings and quick questions',
+      external: true,
+    },
+    {
+      name: 'Instagram',
+      href: INSTAGRAM_URL,
+      detail: '@laperlemama',
+      external: true,
+    },
+    {
+      name: 'Facebook',
+      href: FACEBOOK_URL,
+      detail: 'PerleMama Lactation',
+      external: true,
+    },
+    {
+      name: af ? 'Foon' : 'Phone',
+      href: `tel:${PHONE_E164}`,
+      detail: PHONE_DISPLAY,
+      external: false,
+    },
+    {
+      name: af ? 'Webwerf' : 'Website',
+      href: af ? '/af/' : '/',
+      detail: 'perlemamalactation.co.za',
+      external: false,
+      internal: true,
+    },
+    {
+      name: af ? 'Bespreek' : 'Book',
+      href: af ? '/af/boek/' : '/book/',
+      detail: af ? 'Kort vorm op die webwerf' : 'Short form on the website',
+      external: false,
+      internal: true,
+    },
+  ]
+
+  return (
+    <section className="services">
+      <div className="container">
+        <h2 className="section-title">{af ? 'Skakels' : 'Channels'}</h2>
+        <div className="services-grid content-topics-grid connect-channels-grid">
+          {channels.map((c) =>
+            c.internal ? (
+              <Link key={c.name} to={c.href} className="service-card service-card-link content-topic-card">
+                <h3>{c.name}</h3>
+                <p>{c.detail}</p>
+              </Link>
+            ) : (
+              <a
+                key={c.name}
+                href={c.href}
+                className="service-card service-card-link content-topic-card"
+                {...(c.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                <h3>{c.name}</h3>
+                <p>{c.detail}</p>
+              </a>
+            ),
+          )}
+        </div>
+        <div className="about-card content-body-card connect-areas-card">
+          <h2 className="section-title-2">{af ? 'Diensareas' : 'Service areas'}</h2>
+          <p className="about-text">{SERVICE_AREAS.join(' · ')}</p>
+          <p className="about-text">
+            <a href={SITE_URL}>{SITE_URL.replace('https://', '')}</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 function ReviewStrip({ lang }) {
+  const af = lang === 'af'
   const picks = testimonials.filter((t) => t.lang === lang || lang === 'en').slice(0, 2)
+  if (!picks.length) return null
   return (
-    <div className="content-reviews">
-      {picks.map((t) => (
-        <blockquote key={t.author} className="content-review-card">
-          <p className="content-review-quote">“{t.quote}”</p>
-          <footer>
-            — {t.author}, {t.role}
-          </footer>
-        </blockquote>
-      ))}
-    </div>
+    <section className="about content-reviews-section" aria-label={af ? 'Kliënte-terugvoer' : 'Client reviews'}>
+      <div className="container">
+        <h2 className="section-title">{af ? 'Wat kliënte sê' : 'What clients say'}</h2>
+        <div className="content-reviews">
+          {picks.map((t) => (
+            <blockquote key={t.author} className="content-review-card">
+              <p className="content-review-quote">“{t.quote}”</p>
+              <footer>
+                — {t.author}, {t.role}
+              </footer>
+            </blockquote>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -99,7 +194,6 @@ export default function ContentPage({ page }) {
             </p>
             <h1 className="hero-title content-page-title">{page.h1}</h1>
             <p className="hero-subtitle">{page.lead}</p>
-            <ReviewStrip lang={page.lang} />
             <div className="content-cta-row">
               <a href={WHATSAPP_URL} className="cta-button" target="_blank" rel="noopener noreferrer">
                 WhatsApp
@@ -137,21 +231,30 @@ export default function ContentPage({ page }) {
         </section>
       )}
 
-      {page.type === 'resources' && (
-        <section className="services">
-          <div className="container">
-            <h2 className="section-title">{af ? 'Onderwerpe' : 'Topics'}</h2>
-            <div className="services-grid content-topics-grid">
-              {problems.map((p) => (
-                <Link key={p.path} to={p.path} className="service-card service-card-link content-topic-card">
-                  <h3>{p.h1}</h3>
-                  <p>{p.lead}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+      {(page.type === 'problem' || page.type === 'service' || page.type === 'about') && (
+        <QuoteStrip seed={page.id} lang={page.lang} />
       )}
+
+      {page.type === 'resources' && (
+        <>
+          <section className="services">
+            <div className="container">
+              <h2 className="section-title">{af ? 'Onderwerpe' : 'Topics'}</h2>
+              <div className="services-grid content-topics-grid">
+                {problems.map((p) => (
+                  <Link key={p.path} to={p.path} className="service-card service-card-link content-topic-card">
+                    <h3>{p.h1}</h3>
+                    <p>{p.lead}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+          <QuoteGallery lang={page.lang} />
+        </>
+      )}
+
+      {page.type === 'connect' && <ConnectChannels lang={page.lang} />}
 
       {page.type === 'about' && (
         <section className="services">
@@ -186,6 +289,8 @@ export default function ContentPage({ page }) {
       )}
 
       <FaqBlock faqs={page.faqs} lang={page.lang} />
+
+      {page.type !== 'connect' && <ReviewStrip lang={page.lang} />}
 
       {(page.type === 'problem' || page.type === 'service') && <BookCta lang={page.lang} />}
     </main>
