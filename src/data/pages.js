@@ -144,11 +144,18 @@ export const pages = [
       'I obtained my Lactation Counselor (LC, CBI) certification through Childbirth International, including education and counselling hours, ethics, and communication skills.',
       'I help facilitate evidence-based peer support spaces such as the Breasties breastfeeding community on Facebook.',
       'Special interests: infant reflux, allergy management, fertility during breastfeeding, gentle weaning, ecological breastfeeding, back-to-work pumping, and updated mastitis care.',
+      'Why PerleMama? Pearls are perfect and beautiful, but making a pearl is hard work — it starts out as something foreign and strange to the oyster. Layer by layer, that little “irritation” becomes something valuable and eternal.',
+      'For many people, breastfeeding starts out feeling like a grain of sand in an oyster: foreign, strange, difficult. With every feed, it can change into a gift of health and connection — perfect and white like a drop of milk: a pearl.',
+      'If your feeding journey feels challenging on those late nights — if you are sore or emotionally spent — think of the pearl you are making. That is what PerleMama means. There is help and support for breastfeeding challenges.',
     ],
     faqs: [
       {
         q: 'What does LC (CBI) mean?',
         a: 'Lactation Counselor certified via Childbirth International — education and counselling hours focused on supporting the breastfeeding relationship.',
+      },
+      {
+        q: 'What does PerleMama mean?',
+        a: 'It comes from the pearl: breastfeeding can start as something foreign and hard, and with support and every feed it can become a gift of health and connection — like a pearl formed layer by layer.',
       },
     ],
   },
@@ -471,8 +478,16 @@ export const pages = [
       'Ek het my Lactation Counselor (LC, CBI) sertifisering via Childbirth International behaal — opleiding én beradingsure, etiek en kommunikasie.',
       'Ek help met bewysgebaseerde portuurgroepe soos Breasties op Facebook.',
       'Spesiale belangstellings: refluks, allergie-bestuur, vrugbaarheid tydens borsvoeding, sagte speen, ekologiese borsvoeding, terug werk toe pomp, en bygewerkte mastitis-sorg.',
+      'Hoekom PerleMama? Pêrels is perfek en pragtig, maar om ’n pêrel te maak is harde werk — dit begin as iets vreemd vir die oester. Laag vir laag word daardie klein “irritasie” iets waardevol en ewig.',
+      'Vir baie voel borsvoeding aan die begin soos ’n sandkorrel in ’n oester: vreemd, moeilik, uitdagend. Met elke voeding kan dit ’n geskenk van gesondheid en verbinding word — perfek en wit soos ’n druppel melk: ’n pêrel.',
+      'As jou voedingsreis uitdagend voel op daardie laat nagte — as jy seer of emosioneel uitgeput is — dink aan die pêrel wat jy maak. Dit is wat PerleMama beteken. Daar is hulp vir borsvoeding-uitdagings.',
     ],
-    faqs: [],
+    faqs: [
+      {
+        q: 'Wat beteken PerleMama?',
+        a: 'Dit kom van die pêrel: borsvoeding kan begin as iets vreemd en moeilik, en met steun en elke voeding kan dit ’n geskenk van gesondheid en verbinding word — soos ’n pêrel wat laag vir laag gevorm word.',
+      },
+    ],
   },
   {
     id: 'book-af',

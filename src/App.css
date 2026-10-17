@@ -361,6 +361,10 @@
   border-radius: 15px;
 }
 
+.about-image-img-centered {
+  object-position: center;
+}
+
 .about-text-content {
   display: flex;
   flex-direction: column;
@@ -863,7 +867,7 @@
 
   .nav .nav-cta {
     margin-top: 0.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .nav .nav-lang {

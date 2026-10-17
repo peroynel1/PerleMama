@@ -327,6 +327,48 @@ export default function HomePage({ page }) {
                 />
               </div>
             </div>
+
+            <div className="about-section">
+              <div className="about-image">
+                <img
+                  src="/images/perlemama-pearl-perfect-white-drop-of-milk.jpg"
+                  alt={
+                    af
+                      ? 'PerleMama — ’n pêrel, perfek en wit soos ’n druppel melk'
+                      : 'PerleMama — a pearl, perfect and white like a drop of milk'
+                  }
+                  title="a pearl, perfect & white like a drop of milk — PerleMama"
+                  className="about-image-img about-image-img-centered"
+                  width={1024}
+                  height={1100}
+                />
+              </div>
+              <div className="about-text-content">
+                <h3 className="about-subtitle">
+                  {af ? 'Hoekom PerleMama?' : 'Why PerleMama?'}
+                </h3>
+                <p className="about-text">
+                  {af
+                    ? 'Pêrels is perfek en pragtig, maar om ’n pêrel te maak is harde werk — dit begin as iets vreemd en onbekend vir die oester of weekdier. Met tyd word ’n ongelooflik sterk stof geskep, laag vir laag, oor en oor, totdat hierdie klein “irritasie” omskep is in iets waardevol en ewig.'
+                    : 'Pearls are perfect and beautiful, but making a pearl is hard work — it starts out as something foreign and strange to the oyster or mollusk. In time, an incredibly strong substance is created, layer by layer, over and over, until this little “irritation” has been transformed into something valuable and eternal.'}
+                  <br />
+                  <br />
+                  {af
+                    ? 'Vir baie mense voel borsvoeding aan die begin soos ’n klein sandkorrel in ’n oester. Dit voel vreemd, dit voel onbekend, dit voel moeilik en uitdagend. Maar met elke voeding, elke oomblik van borsvoeding, verander hierdie “irriterende” korrel in ’n geskenk van ongelooflike gesondheid en verbinding met jou baba — perfek en wit soos ’n druppel melk: ’n pêrel.'
+                    : 'For many people, breastfeeding starts out feeling like a little grain of sand in an oyster. It feels foreign, it feels strange, it feels difficult and challenging. But with every feed, every moment nursing, this “irritating” grain changes into a gift of incredible health and connection to your baby, perfect and white like a drop of milk — a pearl.'}
+                  <br />
+                  <br />
+                  {af
+                    ? 'As jou voedingsreis uitdagend voel op daardie laat nagte — as daar uitdagings was, as jy seer is, as jy emosioneel uitgeput is — dink aan die pêrel wat jy maak.'
+                    : 'If your feeding journey feels challenging on those late nights, maybe there have been challenges, you’re sore, you’re emotionally spent, think of the pearl you are making.'}
+                  <br />
+                  <br />
+                  {af
+                    ? 'Dit is wat “PerleMama” beteken en waarvoor dit staan. Daar is hulp en ondersteuning vir borsvoeding-uitdagings!'
+                    : 'That’s what “PerleMama” means and stands for. There is help and support for breastfeeding challenges!'}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
