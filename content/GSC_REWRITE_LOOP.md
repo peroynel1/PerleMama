@@ -21,7 +21,7 @@ Connect Google Search Console for `perlemamalactation.co.za` first — see [SEO.
 - [ ] H2s / FAQ cover long-tail questions now showing in GSC
 - [ ] Internal links to services + WhatsApp CTA still valid
 - [ ] EN↔AF pair stays in sync when intent is shared
-- [ ] Credentials remain accurate (LC CBI — not IBCLC)
+- [ ] Credentials remain accurate (LC, CBI)
 
 ## Cadence vs new content
 

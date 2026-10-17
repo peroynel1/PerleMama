@@ -21,7 +21,7 @@ export const pages = [
       'PerleMama Lactation offers bilingual (English & Afrikaans) breastfeeding support with Annette Nel, Lactation Counselor (LC, CBI). Home visits, online video consults, and Stellenbosch in-person sessions — book on WhatsApp.',
     type: 'home',
     credentials:
-      'Annette Nel, LC (CBI) · La Leche League SA Leader, Stellenbosch · Evidence-based lactation support from start to wean',
+      'Annette Nel, LC (CBI) · Stellenbosch · Evidence-based lactation support from start to wean',
     faqs: [
       {
         q: 'Where do you offer breastfeeding help?',
@@ -124,7 +124,7 @@ export const pages = [
       },
       {
         q: 'Can I claim from medical aid?',
-        a: 'Some medical aids reimburse lactation support — check with your scheme. I can provide an invoice; I am a Lactation Counselor (LC, CBI), not an IBCLC.',
+        a: 'Some medical aids reimburse lactation support — check with your scheme. I can provide an invoice as a Lactation Counselor (LC, CBI).',
       },
     ],
   },
@@ -135,16 +135,15 @@ export const pages = [
     hreflangPath: '/af/oor-my/',
     title: 'About Annette Nel, LC (CBI) | PerleMama Lactation Stellenbosch',
     description:
-      'Meet Annette Nel, Lactation Counselor (LC, CBI) and La Leche League SA Leader in Stellenbosch. Bilingual breastfeeding support from start to wean.',
+      'Meet Annette Nel, Lactation Counselor (LC, CBI) in Stellenbosch. Bilingual breastfeeding support from start to wean.',
     h1: 'Hey, I am Annette',
     lead:
-      'Mother of two, Lactation Counselor (LC, CBI), and La Leche League SA Leader for Stellenbosch. I support mothers to breastfeed in comfort and confidence.',
+      'Mother of two and Lactation Counselor (LC, CBI) based in Stellenbosch. I support mothers to breastfeed in comfort and confidence.',
     type: 'about',
     body: [
       'I obtained my Lactation Counselor (LC, CBI) certification through Childbirth International, including education and counselling hours, ethics, and communication skills.',
-      'I volunteer with La Leche League South Africa as the Stellenbosch Leader and help facilitate evidence-based peer support spaces such as the Breasties breastfeeding community on Facebook.',
+      'I help facilitate evidence-based peer support spaces such as the Breasties breastfeeding community on Facebook.',
       'Special interests: infant reflux, allergy management, fertility during breastfeeding, gentle weaning, ecological breastfeeding, back-to-work pumping, and updated mastitis care.',
-      'I am not an IBCLC. When a case needs medical or IBCLC-level care, I refer appropriately.',
     ],
     faqs: [
       {
@@ -162,8 +161,7 @@ export const pages = [
     description:
       'Book a home visit, online consult, or Stellenbosch in-person session with Annette Nel. WhatsApp or short form — baby age, main concern, preferred option.',
     h1: 'Book a consult',
-    lead:
-      'Share a few details and I will reply on WhatsApp with availability and rates. Urgent pain or fever: contact your GP or emergency services first.',
+    lead: 'Share a few details and I will reply on WhatsApp with availability and rates.',
     type: 'book',
   },
   {
@@ -196,7 +194,6 @@ export const pages = [
     body: [
       'Sore, cracked, or misshapen nipples after feeds often mean baby is not taking a deep enough mouthful of breast. Pain that lasts throughout the feed is a signal to get help.',
       'In a session we assess latch and positioning, look at oral function when needed, and build a plan you can use at the next feed — not only advice for “someday”.',
-      'This page is educational support, not emergency care. Fever, red streaks, or feeling very unwell need a doctor urgently.',
     ],
     faqs: [
       {
@@ -224,7 +221,6 @@ export const pages = [
     body: [
       'True low supply and perceived low supply need different approaches. Effective, frequent milk removal is the foundation — supplements alone rarely fix the root cause.',
       'We look at feed frequency, latch quality, output signs (nappies, weight), pumping if used, and your goals around exclusive breastfeeding or combination feeding.',
-      'Educational support only. Poor weight gain or a jaundiced, sleepy baby needs prompt clinical assessment.',
     ],
     faqs: [
       {
@@ -240,13 +236,12 @@ export const pages = [
     hreflangPath: '/af/mastitis/',
     title: 'Mastitis & blocked ducts | Updated care | PerleMama Lactation',
     description:
-      'Mastitis and blocked ducts: what has changed in care (cold, rest, continued feeding). Support from Annette Nel in Stellenbosch or online. Seek a doctor if you are systemically unwell.',
+      'Mastitis and blocked ducts: what has changed in care (cold, rest, continued feeding). Support from Annette Nel in Stellenbosch or online.',
     h1: 'Mastitis and blocked ducts',
     lead:
       'Older advice to “heat and aggressively massage” is outdated. Current approaches focus on reducing inflammation, continuing to feed, and getting the right clinical support.',
     type: 'problem',
     body: [
-      'If you have fever, spreading redness, or feel seriously ill, contact a doctor or emergency care first. Lactation support works alongside medical care, not instead of it.',
       'In a consult we look at latch and drainage, feeding patterns, and practical comfort measures aligned with current mastitis protocols.',
       'Recurrent mastitis often has a feeding or inflammation driver we can address together.',
     ],
@@ -311,19 +306,19 @@ export const pages = [
     hreflangPath: '/af/baba-gewig/',
     title: 'Newborn not gaining weight | Breastfeeding support | PerleMama Lactation',
     description:
-      'Concerned about newborn weight gain while breastfeeding? Get a feeding assessment and plan with Annette Nel in Stellenbosch or online. Seek urgent care if baby is unwell.',
+      'Concerned about newborn weight gain while breastfeeding? Get a feeding assessment and plan with Annette Nel in Stellenbosch or online.',
     h1: 'Newborn not gaining weight',
     lead:
-      'Weight concerns are stressful. We assess milk transfer, latch, feed frequency, and output — and work with your paediatric advice.',
+      'Weight concerns are stressful. We assess milk transfer, latch, feed frequency, and output — and build a clear feeding plan.',
     type: 'problem',
     body: [
       'Slow gain has many causes: ineffective latch, sleepy feeds, schedule issues, or medical factors. A feeding observation clarifies next steps.',
-      'If your baby is lethargic, not wetting nappies, or your clinician is worried, follow medical advice immediately. Lactation support complements paediatric care.',
+      'We look at latch, feed frequency, nappy output, and weight trends, then agree practical next steps for the coming feeds.',
     ],
     faqs: [
       {
         q: 'Should I supplement?',
-        a: 'Sometimes supplementation protects baby while we fix transfer. That decision should involve weight data and, where needed, your doctor or clinic.',
+        a: 'Sometimes supplementation protects baby while we fix transfer. That decision should involve weight data and your feeding goals.',
       },
     ],
   },
@@ -342,7 +337,7 @@ export const pages = [
       'PerleMama Lactation bied tweetalige (Afrikaans & Engels) borsvoeding ondersteuning met Annette Nel, Lactation Counselor (LC, CBI). Huisbesoeke, aanlyn video-sessies, en Stellenbosch konsultasies — bespreek op WhatsApp.',
     type: 'home',
     credentials:
-      'Annette Nel, LC (CBI) · La Leche League SA-leier, Stellenbosch · Bewysgebaseerde ondersteuning van begin tot speen',
+      'Annette Nel, LC (CBI) · Stellenbosch · Bewysgebaseerde ondersteuning van begin tot speen',
     faqs: [
       {
         q: 'Waar help jy met borsvoeding?',
@@ -440,16 +435,15 @@ export const pages = [
     hreflangPath: '/about/',
     title: 'Oor Annette Nel, LC (CBI) | PerleMama Lactation Stellenbosch',
     description:
-      'Ontmoet Annette Nel, Lactation Counselor (LC, CBI) en La Leche League SA-leier in Stellenbosch. Tweetalige borsvoeding ondersteuning.',
+      'Ontmoet Annette Nel, Lactation Counselor (LC, CBI) in Stellenbosch. Tweetalige borsvoeding ondersteuning.',
     h1: 'Haai, ek is Annette',
     lead:
-      'Ma van twee, Lactation Counselor (LC, CBI), en La Leche League SA-leier vir Stellenbosch. Ek help mammas om met gemak en selfvertroue te borsvoed.',
+      'Ma van twee en Lactation Counselor (LC, CBI) in Stellenbosch. Ek help mammas om met gemak en selfvertroue te borsvoed.',
     type: 'about',
     body: [
       'Ek het my Lactation Counselor (LC, CBI) sertifisering via Childbirth International behaal — opleiding én beradingsure, etiek en kommunikasie.',
-      'Ek is die Stellenbosch La Leche League SA-leier en help met bewysgebaseerde portuurgroepe soos Breasties op Facebook.',
+      'Ek help met bewysgebaseerde portuurgroepe soos Breasties op Facebook.',
       'Spesiale belangstellings: refluks, allergie-bestuur, vrugbaarheid tydens borsvoeding, sagte speen, ekologiese borsvoeding, terug werk toe pomp, en bygewerkte mastitis-sorg.',
-      'Ek is nie ’n IBCLC nie. Waar mediese of IBCLC-vlak sorg nodig is, verwys ek verder.',
     ],
     faqs: [],
   },
@@ -462,8 +456,7 @@ export const pages = [
     description:
       'Bespreek ’n huisbesoek, aanlyn sessie of Stellenbosch besoek met Annette Nel. WhatsApp of kort vorm — baba se ouderdom, hoofkwessie, voorkeur.',
     h1: 'Bespreek ’n konsultasie',
-    lead:
-      'Deel ’n paar besonderhede en ek antwoord op WhatsApp met beskikbaarheid en tariewe. Dringende pyn of koors: kontak eers jou GP of nooddienste.',
+    lead: 'Deel ’n paar besonderhede en ek antwoord op WhatsApp met beskikbaarheid en tariewe.',
     type: 'book',
   },
   {
@@ -496,7 +489,6 @@ export const pages = [
     body: [
       'Seer, gekraakte of vervormde tepels ná voeding beteken dikwels baba kry nie ’n diep genoeg mondvol borste nie. Pyn dwarsdeur die voeding is ’n teken om hulp te kry.',
       'In ’n sessie kyk ons na aanhaking en posisie, mondfunksie waar nodig, en bou ’n plan vir die volgende voeding.',
-      'Hierdie bladsy is opvoedkundige ondersteuning, nie noodgeval-sorg nie. Koors of ernstige siekte: sien ’n dokter.',
     ],
     faqs: [
       {
@@ -530,13 +522,12 @@ export const pages = [
     hreflangPath: '/mastitis/',
     title: 'Mastitis & verstopte melkkanaal | PerleMama Lactation',
     description:
-      'Mastitis en verstopte kanale: bygewerkte sorg (koue, rus, aanhou voed). Hulp van Annette Nel in Stellenbosch of aanlyn. Sien ’n dokter as jy siek voel.',
+      'Mastitis en verstopte kanale: bygewerkte sorg (koue, rus, aanhou voed). Hulp van Annette Nel in Stellenbosch of aanlyn.',
     h1: 'Mastitis en verstopte melkkanaal',
     lead:
       'Ou raad om “warm te maak en hard te masseer” is verouderd. Hedendaagse benaderings fokus op inflammasie verminder, aanhou voed, en die regte kliniese steun.',
     type: 'problem',
     body: [
-      'Koors, rooi strepe of ernstige siekte: kontak eers ’n dokter. Borsvoeding-ondersteuning werk saam met mediese sorg.',
       'In ’n konsultasie kyk ons na aanhaking, dreinasie en praktiese gemaksmaatreëls volgens huidige protokolle.',
     ],
     faqs: [],
@@ -584,14 +575,14 @@ export const pages = [
     hreflangPath: '/newborn-weight-gain/',
     title: 'Baba nie genoeg gewig nie | PerleMama Lactation',
     description:
-      'Bekommerd oor jou baba se gewig met borsvoeding? Kry ’n voedingsassessering met Annette Nel. Soek dringend sorg as baba siek is.',
+      'Bekommerd oor jou baba se gewig met borsvoeding? Kry ’n voedingsassessering met Annette Nel in Stellenbosch of aanlyn.',
     h1: 'Baba kry nie genoeg gewig nie',
     lead:
-      'Gewigskommer is stresvol. Ons assessseer melk-oordrag, aanhaking, voedingsfrekwensie en luiers — saam met jou pediater toe se raad.',
+      'Gewigskommer is stresvol. Ons assessseer melk-oordrag, aanhaking, voedingsfrekwensie en luiers — en bou ’n duidelike voedingsplan.',
     type: 'problem',
     body: [
       'Stadige gewigstoename het baie oorsake. ’n Voeding waarneming maak volgende stappe duidelik.',
-      'As baba lusteloos is of jou klinikus bekommerd is, volg mediese raad dadelik.',
+      'Ons kyk na aanhaking, voedingsfrekwensie, luiers en gewigstendense, dan stem ons praktiese volgende stappe ooreen.',
     ],
     faqs: [],
   },

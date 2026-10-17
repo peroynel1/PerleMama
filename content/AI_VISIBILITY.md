@@ -26,6 +26,6 @@ Latest run: [AI_VISIBILITY_LOG.md](./AI_VISIBILITY_LOG.md)
 ## Rules
 
 - Do not spam the same prompt dozens of times in one day.
-- When not cited, note which domains win — directories, IBCLC clinics, LLL pages.
+- When not cited, note which domains win — directories, IBCLC clinics, peer-support sites.
 - Feed gaps into problem-page FAQs or service-page proof (areas, languages, WhatsApp).
 - Prefer “PerleMama Lactation” + domain in titles (brand disambiguation).

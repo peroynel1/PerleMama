@@ -243,7 +243,7 @@ WhatsApp is the primary booking channel: ${WHATSAPP_URL}
 
 ## Notes
 
-Annette Nel is a Lactation Counselor (LC, CBI) and La Leche League SA Leader for Stellenbosch — not an IBCLC. Educational support only; seek medical care for emergencies.
+Annette Nel is a Lactation Counselor (LC, CBI) based in Stellenbosch.
 
 Do not create thin keyword-only location URLs that duplicate service pages (e.g. /breastfeeding-help-stellenbosch when / and /stellenbosch-clinic/ already cover that intent).
 `

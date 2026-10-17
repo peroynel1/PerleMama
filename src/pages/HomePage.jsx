@@ -258,8 +258,8 @@ export default function HomePage({ page }) {
                   <br />
                   <br />
                   {af
-                    ? 'Ek is die La Leche League SA-leier vir Stellenbosch en help fasiliteer bewysgebaseerde portuursteun soos die Breasties-groep op Facebook.'
-                    : 'I am the La Leche League SA Leader for Stellenbosch and help facilitate evidence-based peer support spaces such as the Breasties Breastfeeding Support Group on Facebook.'}
+                    ? 'Ek help fasiliteer bewysgebaseerde portuursteun soos die Breasties-groep op Facebook.'
+                    : 'I help facilitate evidence-based peer support spaces such as the Breasties Breastfeeding Support Group on Facebook.'}
                   <br />
                   <br />
                   {af

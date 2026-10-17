@@ -11,16 +11,15 @@ export const blogPosts = [
     date: '2026-09-09',
     title: 'The updated mastitis protocol: what parents need to know',
     description:
-      'Why heat-and-aggressive-massage advice is outdated, what helps inflammation, and when to see a doctor — from PerleMama Lactation in Stellenbosch.',
+      'Why heat-and-aggressive-massage advice is outdated, and what helps inflammation — from PerleMama Lactation in Stellenbosch.',
     h1: 'The updated mastitis protocol',
     lead:
-      'A lot of mastitis advice online is still based on older recommendations. Current care focuses on reducing inflammation, continuing to feed, and getting medical help when you are systemically unwell.',
+      'A lot of mastitis advice online is still based on older recommendations. Current care focuses on reducing inflammation, continuing to feed, and supporting effective milk removal.',
     tags: ['mastitis', 'breastfeeding'],
     relatedPath: '/mastitis/',
     body: [
       'Older guidance often pushed heat, aggressive massage, and “clearing the clog” at all costs. That can worsen inflammation for many parents.',
-      'Updated approaches emphasise rest, cold for comfort when inflamed, continued milk removal without forcing, anti-inflammatory strategies as advised by your clinician, and feeding support so latch and drainage are effective.',
-      'Fever, spreading redness, or feeling seriously ill is a medical issue first. Lactation support works alongside your GP or emergency care — not instead of it.',
+      'Updated approaches emphasise rest, cold for comfort when inflamed, continued milk removal without forcing, and feeding support so latch and drainage are effective.',
       'If mastitis keeps coming back, a feeding assessment in Stellenbosch, at home, or online can help find drivers such as shallow latch or incomplete drainage.',
     ],
   },
@@ -57,7 +56,7 @@ export const blogPosts = [
     body: [
       'Die vinnigste pad is gewoonlik WhatsApp met baba se ouderdom, jou hoofkwessie, en of jy huisbesoek, Stellenbosch, of video verkies.',
       'Vir pynlike aanhaking, seer tepels, lae melkvoorraad of mastitis het ons toegewyde hulpbladsye — dit is sterker vir soekenjins én vir jou as dun “sleutelwoord”-bladsye wat dieselfde ding herhaal.',
-      'PerleMama Lactation bied tweetalige (Afrikaans en Engels) ondersteuning met Annette Nel, LC (CBI), as La Leche League SA-leier in Stellenbosch.',
+      'PerleMama Lactation bied tweetalige (Afrikaans en Engels) ondersteuning met Annette Nel, LC (CBI), in Stellenbosch.',
     ],
   },
 ]

@@ -6,12 +6,10 @@ NAP everywhere: **PerleMama Lactation · Annette Nel, LC (CBI) · Stellenbosch �
 
 | Directory | Status | Action |
 | --- | --- | --- |
-| LLLSA Western Cape | Listed (Annette Nel) | Add website URL if field exists |
 | Fit Best / PBP provider PDF | Listed | Ask update with site URL |
 | Postpartum Directory interview | Live | Add site link in profile if possible |
 | LACSA Western Cape | Not listed | Apply/list only if membership allows |
 | SACLC Cape Winelands | Not listed | N/A unless SACLC credential |
-| Mother Instinct BF list | Stale LLL row (Emsie) | Request Stellenbosch LLL update → Annette |
 | Expectant Mothers Guide | Not listed | Submit listing when site live |
 | HelloPeter | None | Optional after reviews exist |
 | Google Business Profile | Manual | See SEO.md Phase 0 |
@@ -26,7 +24,7 @@ Paste-ready note for paediatricians, midwives, doulas, antenatal educators:
 
 Hi [Name],
 
-I am Annette Nel, Lactation Counselor (LC, CBI) and La Leche League SA Leader in Stellenbosch. I offer:
+I am Annette Nel, Lactation Counselor (LC, CBI), based in Stellenbosch. I offer:
 
 - Home / hospital visits (Stellenbosch, Helderberg, Paarl/Franschhoek corridor)
 - Online video consults (South Africa–wide)
@@ -35,7 +33,7 @@ I am Annette Nel, Lactation Counselor (LC, CBI) and La Leche League SA Leader in
 English and Afrikaans. Parents usually book on WhatsApp: **076 183 6080**  
 Website: **https://perlemamalactation.co.za**
 
-Happy to take referrals for latch pain, supply worries, mastitis support (alongside medical care), pumping/back-to-work, and feeding assessments. I refer on when IBCLC or medical care is the better fit.
+Happy to take referrals for latch pain, supply worries, mastitis support, pumping/back-to-work, and feeding assessments.
 
 Warmly,  
 Annette Nel  

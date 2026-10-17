@@ -42,11 +42,6 @@ export default function Footer({ lang = 'en' }) {
           </p>
         </div>
         <div>
-          <p className="footer-disclaimer">
-            {af
-              ? 'Borsvoeding-ondersteuning is nie noodgeval-sorg nie. By koors, erge pyn of ’n siek baba, kontak jou GP of nooddienste.'
-              : 'Lactation support is not emergency care. For fever, severe pain, or an unwell baby, contact your GP or emergency services.'}
-          </p>
           <p className="footer-copy">
             © {new Date().getFullYear()} {SITE_NAME}. perlemamalactation.co.za
           </p>
