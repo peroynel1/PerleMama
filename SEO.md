@@ -11,11 +11,15 @@ Ops after go-live:
 
 ## Phase 0 checklist (owner — manual)
 
-### Domain & DNS
+### Domain & DNS / deploy source of truth
 
-- [ ] Register `perlemamalactation.co.za` if still NXDOMAIN
-- [ ] Point DNS (Cloudflare recommended) → GitHub Pages / Cloudflare Pages per deploy workflow
-- [ ] Confirm `https://perlemamalactation.co.za` returns **200**
+**Live site is deployed from the fork** [`peroynel1/PerleMama`](https://github.com/peroynel1/PerleMama) (GitHub Pages + custom domain), not from `PeroyNel/PerleMama`.
+
+- Pages: Settings → Pages → Build from **GitHub Actions**; custom domain `perlemamalactation.co.za`; HTTPS on
+- DNS (Cloudflare, DNS-only / grey cloud): apex → GitHub Pages A records; `www` → `peroynel1.github.io` (see `scripts/github-pages.bind` / `scripts/setup-cloudflare-dns.mjs`)
+- Repo `public/CNAME` = `perlemamalactation.co.za`
+- Local git: `git push` should go to **`fork`** / `peroynel1` (origin push URL is set to the fork). Keep `PeroyNel/PerleMama` in sync only if you still want that mirror.
+- [ ] Confirm `https://perlemamalactation.co.za` returns **200** with new nav/blog after each deploy
 - [ ] Optional later: redirect `perlemama.co.za` → canonical (do not run two live sites)
 
 ### Google Business Profile (this week)
