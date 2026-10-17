@@ -365,10 +365,17 @@
   object-position: center;
 }
 
+.about-image:has(.about-image-img-graphic) {
+  height: auto;
+  min-height: 0;
+}
+
 .about-image-img-graphic {
-  object-fit: contain;
-  object-position: center;
-  background: #f2cfd4;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: unset;
+  display: block;
 }
 
 .about-text-content {
