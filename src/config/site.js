@@ -1,5 +1,6 @@
 export const SITE_URL = 'https://perlemamalactation.co.za'
 export const SITE_NAME = 'PerleMama Lactation'
+export const GA_MEASUREMENT_ID = 'G-CGSFF96DJG'
 export const LOGO_PATH = '/images/perlemama-lactation-logo.jpg'
 export const FAVICON_PATH = '/images/perlemama-lactation-favicon.png'
 export const OG_IMAGE = `${SITE_URL}/images/perlemama-lactation-logo.jpg`

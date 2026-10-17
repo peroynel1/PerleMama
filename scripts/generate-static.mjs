@@ -16,6 +16,7 @@ import {
   WHATSAPP_URL,
   FACEBOOK_URL,
   INSTAGRAM_URL,
+  GA_MEASUREMENT_ID,
 } from '../src/config/site.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -153,6 +154,13 @@ function buildHead(page) {
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="${OG_IMAGE}" />
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
+</script>
 ${assetTags.join('\n')}
 `
 }

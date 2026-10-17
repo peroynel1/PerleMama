@@ -1,5 +1,12 @@
 import { useEffect } from 'react'
-import { SITE_NAME, SITE_URL, OG_IMAGE, FACEBOOK_URL, INSTAGRAM_URL } from '../config/site'
+import {
+  SITE_NAME,
+  SITE_URL,
+  OG_IMAGE,
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  GA_MEASUREMENT_ID,
+} from '../config/site'
 import { absoluteUrl } from '../data/pages'
 
 function upsertMeta(attr, key, content) {
@@ -116,6 +123,13 @@ export default function Seo({ page }) {
       document.head.appendChild(script)
     }
     script.textContent = JSON.stringify(schema)
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: page.path,
+        page_title: page.title,
+      })
+    }
   }, [page])
 
   return null
