@@ -15,8 +15,8 @@ export const FACEBOOK_URL = 'https://www.facebook.com/398919377142731'
 export const INSTAGRAM_URL = 'https://www.instagram.com/laperlemama/'
 export const CBI_URL = 'https://childbirthinternational.com/'
 export const LACSA_URL = 'https://www.lacsa.org.za/'
-export const CBI_BADGE_PATH = '/images/childbirth-international-certified-badge.jpg'
-export const LACSA_LOGO_PATH = '/images/lacsa-lactation-consultants-southern-africa-logo.jpg'
+export const CBI_BADGE_PATH = '/images/childbirth-international-certified-badge.png'
+export const LACSA_LOGO_PATH = '/images/lacsa-lactation-consultants-southern-africa-logo.png'
 export const EMAIL = '' // add when public
 export const NAP = {
   name: 'PerleMama Lactation',
