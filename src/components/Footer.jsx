@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom'
-import { FACEBOOK_URL, INSTAGRAM_URL, PHONE_DISPLAY, SITE_NAME, WHATSAPP_URL } from '../config/site'
+import {
+  CBI_BADGE_PATH,
+  CBI_URL,
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  LACSA_LOGO_PATH,
+  LACSA_URL,
+  PHONE_DISPLAY,
+  SITE_NAME,
+  WHATSAPP_URL,
+} from '../config/site'
 
 export default function Footer({ lang = 'en' }) {
   const af = lang === 'af'
@@ -53,6 +63,36 @@ export default function Footer({ lang = 'en' }) {
           <p className="footer-copy">
             © {new Date().getFullYear()} {SITE_NAME}. perlemamalactation.co.za
           </p>
+          <div className="footer-badges">
+            <a
+              href={CBI_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-badge"
+            >
+              <img
+                src={CBI_BADGE_PATH}
+                alt="Proud to be certified with Childbirth International"
+                width={88}
+                height={88}
+                loading="lazy"
+              />
+            </a>
+            <a
+              href={LACSA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-badge"
+            >
+              <img
+                src={LACSA_LOGO_PATH}
+                alt="LACSA — Lactation Consultants of Southern & Africa"
+                width={180}
+                height={56}
+                loading="lazy"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
