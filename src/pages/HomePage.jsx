@@ -53,7 +53,6 @@ export default function HomePage({ page }) {
   const clinicPath = af ? '/af/stellenbosch-kliniek/' : '/stellenbosch-clinic/'
   const homeVisitPath = af ? '/af/huisbesoeke/' : '/home-visits/'
   const resourcesPath = '/blog/'
-  const aboutPath = af ? '/af/oor-my/' : '/about/'
 
   return (
     <main>
@@ -285,9 +284,6 @@ export default function HomePage({ page }) {
                     ? 'Ek is ’n tuisgeboorte-ma en steun vroue se reg om ingeligte besluite te neem oor swangerskap, geboorte en borsvoeding.'
                     : 'I am a homebirther and have experienced the joy of an unassisted birth, and support the right of women to make their own informed decisions regarding their pregnancy, birth and breastfeeding journey.'}
                 </p>
-                <Link to={aboutPath} className="blog-read-more">
-                  {af ? 'Lees meer →' : 'Read more →'}
-                </Link>
               </div>
             </div>
 
