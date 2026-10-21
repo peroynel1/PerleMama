@@ -83,7 +83,6 @@ function buildBody(page) {
 <article>
   <h1>${escapeHtml(page.h1)}</h1>
   <p>${escapeHtml(page.lead)}</p>
-  ${page.image ? `<img src="${page.image}" alt="${escapeHtml(page.imageAlt || '')}" width="1200" height="800" />` : ''}
   ${paras}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>

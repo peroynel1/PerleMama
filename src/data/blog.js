@@ -18,9 +18,6 @@ export const blogPosts = [
     tags: ['mastitis', 'breastfeeding'],
     image: '/images/mastitis-breastfeeding-newborn-mother-bonding.jpg',
     imageAlt: 'Mother breastfeeding her newborn baby',
-    imageCredit: 'Mateusz Dach via Pexels',
-    imageSource:
-      'https://www.pexels.com/photo/mother-breastfeeding-newborn-baby-4519299/',
     relatedPath: '/mastitis/',
     body: [
       'Older guidance often pushed heat, aggressive massage, and “clearing the clog” at all costs. That can worsen inflammation for many parents.',
@@ -41,8 +38,6 @@ export const blogPosts = [
     tags: ['pumping', 'back to work'],
     image: '/images/pump-flange-fit-expressed-milk-bottle.jpg',
     imageAlt: 'Mother holding a bottle of expressed breast milk in her kitchen',
-    imageCredit: 'MART PRODUCTION via Pexels',
-    imageSource: 'https://www.pexels.com/photo/a-woman-holding-a-baby-bottle-7491264/',
     relatedPath: '/returning-to-work-pumping/',
     body: [
       'Hypermobility, breast shape, and how your tissue responds to a particular pump all influence whether a flange size works.',
@@ -63,9 +58,6 @@ export const blogPosts = [
     tags: ['stellenbosch', 'borsvoeding'],
     image: '/images/borsvoeding-hulp-stellenbosch-borsvoeding-op-gras.jpg',
     imageAlt: 'Moeder borsvoed haar kind terwyl sy op die gras sit',
-    imageCredit: 'Luis Becerra Fotógrafo via Pexels',
-    imageSource:
-      'https://www.pexels.com/photo/mother-breasfeeding-her-child-while-sitting-on-grass-5934925/',
     relatedPath: '/af/stellenbosch-kliniek/',
     body: [
       'Die vinnigste pad is gewoonlik WhatsApp met baba se ouderdom, jou hoofkwessie, en of jy huisbesoek, Stellenbosch, of video verkies.',

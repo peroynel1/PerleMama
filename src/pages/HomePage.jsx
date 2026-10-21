@@ -450,9 +450,20 @@ export default function HomePage({ page }) {
               </button>
               <div className="blog-article-card">
                 <div className="blog-article-image">
-                  <div className="blog-image-placeholder">
-                    {af ? 'Artikel' : 'Article'}
-                  </div>
+                  {topic.image ? (
+                    <img
+                      src={topic.image}
+                      alt={topic.imageAlt || ''}
+                      className="blog-carousel-img"
+                      width={1200}
+                      height={800}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="blog-image-placeholder">
+                      {af ? 'Artikel' : 'Article'}
+                    </div>
+                  )}
                 </div>
                 <div className="blog-article-content">
                   <span className="blog-date">{topic.date}</span>
