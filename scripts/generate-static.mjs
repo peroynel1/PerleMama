@@ -83,6 +83,7 @@ function buildBody(page) {
 <article>
   <h1>${escapeHtml(page.h1)}</h1>
   <p>${escapeHtml(page.lead)}</p>
+  ${page.image ? `<img src="${page.image}" alt="${escapeHtml(page.imageAlt || '')}" width="1200" height="800" />` : ''}
   ${paras}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>
@@ -150,9 +151,9 @@ function buildHead(page) {
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${SITE_NAME}" />
 <meta property="og:locale" content="${page.lang === 'af' ? 'af_ZA' : 'en_ZA'}" />
-<meta property="og:image" content="${OG_IMAGE}" />
+<meta property="og:image" content="${page.image ? `${SITE_URL}${page.image}` : OG_IMAGE}" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="${OG_IMAGE}" />
+<meta name="twitter:image" content="${page.image ? `${SITE_URL}${page.image}` : OG_IMAGE}" />
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
 <script>
@@ -213,6 +214,8 @@ for (const post of blogPosts) {
     h1: post.h1,
     lead: post.lead,
     body: post.body,
+    image: post.image,
+    imageAlt: post.imageAlt,
     faqs: [],
     type: 'blog',
   })

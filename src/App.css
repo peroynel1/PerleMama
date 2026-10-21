@@ -1134,6 +1134,36 @@
   margin-bottom: 0;
 }
 
+.blog-index-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.blog-article-figure {
+  margin: 0 0 1.5rem;
+}
+
+.blog-article-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  display: block;
+}
+
+.blog-image-credit {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
 .content-topics-grid {
   margin-top: 2rem;
 }

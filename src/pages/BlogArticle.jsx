@@ -16,6 +16,7 @@ export default function BlogArticle() {
     hreflangPath: blogPath(post.slug),
     title: `${post.title} | ${SITE_NAME}`,
     description: post.description,
+    image: post.image,
     faqs: [],
   }
 
@@ -45,6 +46,22 @@ export default function BlogArticle() {
       <section className="about">
         <div className="container">
           <div className="about-card content-body-card">
+            {post.image && (
+              <figure className="blog-article-figure">
+                <img
+                  src={post.image}
+                  alt={post.imageAlt || ''}
+                  className="blog-article-hero-img"
+                  width={1200}
+                  height={800}
+                />
+                {post.imageCredit && (
+                  <figcaption className="blog-image-credit">
+                    Photo: {post.imageCredit}
+                  </figcaption>
+                )}
+              </figure>
+            )}
             {post.body.map((para) => (
               <p key={para.slice(0, 48)} className="about-text">
                 {para}

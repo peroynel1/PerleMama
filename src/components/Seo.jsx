@@ -54,11 +54,12 @@ export default function Seo({ page }) {
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:site_name', SITE_NAME)
     upsertMeta('property', 'og:locale', page.lang === 'af' ? 'af_ZA' : 'en_ZA')
-    upsertMeta('property', 'og:image', OG_IMAGE)
+    const ogImage = page.image ? `${SITE_URL}${page.image}` : OG_IMAGE
+    upsertMeta('property', 'og:image', ogImage)
     upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', page.title)
     upsertMeta('name', 'twitter:description', page.description)
-    upsertMeta('name', 'twitter:image', OG_IMAGE)
+    upsertMeta('name', 'twitter:image', ogImage)
 
     const schema = {
       '@context': 'https://schema.org',

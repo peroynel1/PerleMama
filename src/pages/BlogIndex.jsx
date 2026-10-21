@@ -42,6 +42,16 @@ export default function BlogIndex() {
                 to={blogPath(post.slug)}
                 className="service-card service-card-link content-topic-card"
               >
+                {post.image && (
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt || ''}
+                    className="blog-index-image"
+                    width={1200}
+                    height={800}
+                    loading="lazy"
+                  />
+                )}
                 <p className="content-eyebrow" style={{ marginBottom: '0.5rem' }}>
                   {post.date} · {post.lang === 'af' ? 'Afrikaans' : 'English'}
                 </p>
