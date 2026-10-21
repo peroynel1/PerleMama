@@ -36,8 +36,8 @@ export const blogPosts = [
     lead:
       'The standard “just add 2 mm” guideline (or using whatever size came in the box) does not work for every body. Fit affects comfort, output, and whether pumping feels sustainable.',
     tags: ['pumping', 'back to work'],
-    image: '/images/pump-flange-fit-expressed-milk-bottle.jpg',
-    imageAlt: 'Mother holding a bottle of expressed breast milk in her kitchen',
+    image: '/images/pump-flange-fit-bottle-feeding-close-up.jpg',
+    imageAlt: 'Close-up of a baby drinking expressed milk from a bottle',
     relatedPath: '/returning-to-work-pumping/',
     body: [
       'Hypermobility, breast shape, and how your tissue responds to a particular pump all influence whether a flange size works.',
