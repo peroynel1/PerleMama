@@ -129,6 +129,47 @@ export const pages = [
     ],
   },
   {
+    id: 'whatsapp-text-support-en',
+    path: '/whatsapp-text-support/',
+    lang: 'en',
+    hreflangPath: '/af/whatsapp-teks-ondersteuning/',
+    title: 'WhatsApp text support | On-call breastfeeding help | PerleMama Lactation',
+    description:
+      'Unlimited text-based WhatsApp breastfeeding help from Annette Nel, LC (CBI). One week R350, two weeks R550, one month R900 — answers, encouragement, voicenotes and video demonstrations.',
+    h1: 'WhatsApp text support — on-call lactation support',
+    lead:
+      'Unlimited text-based WhatsApp breastfeeding help: get answers, counselling support, and encouragement through every phase of your baby’s development, whenever you send a message.',
+    type: 'service',
+    serviceKey: 'whatsapp',
+    image: '/images/whatsapp-text-support-on-call-lactation-perlemama.jpg',
+    imageAlt:
+      'On Call Lactation Support flyer — unlimited text-based WhatsApp breastfeeding help: one week R350, two weeks R550, one month R900, with Annette Nel, LC',
+    secondaryImage: '/images/whatsapp-text-support-terms-how-it-works-perlemama.jpg',
+    secondaryImageAlt:
+      'WhatsApp text support terms and how it works — unlimited chats and replies between 8am and 9pm, with Annette Nel, LC',
+    body: [
+      'Breastfeeding doesn’t have to be a struggle when you have the right info and support. With on-call text support, I’m right here with you: send a WhatsApp message and get answers to breastfeeding questions, counselling support, encouragement, and all the information you need through every phase of your baby’s development — weekdays and weekends, including evenings.',
+      'We cover what you can expect around growth spurts, how feeding changes, developmental leaps, and tips for sleep, play, and comfort. Support comes as text or voicenotes, with video demonstrations, articles, graphics, and infographics or reading material where they help — as well as live video demonstrations if needed.',
+      'Packages: one week of unlimited support R350, two weeks of unlimited support R550, or one month of unlimited support R900. Once your subscription period runs out, you can request an invoice to activate it again — it activates upon proof of payment (POP).',
+      'How it works: unlimited WhatsApp chats and replies between 8am and 9pm. I’ll endeavour to reply within 2–3 hours, if not upon receipt of your message; on weekends replies may take 4–8 hours. I respond via text or voicenote, and a voice call can be requested in special circumstances.',
+      'Text support is for ongoing questions and encouragement — some things need an in-depth consultation instead: feeding assessments, weaning plans, mastitis, supply issues, back-to-work and pumping plans, and serious nursing difficulties.',
+    ],
+    faqs: [
+      {
+        q: 'How do I start WhatsApp text support?',
+        a: 'Message me on WhatsApp and choose your package — one week (R350), two weeks (R550), or one month (R900). Your support activates upon proof of payment.',
+      },
+      {
+        q: 'When can I message, and how quickly will you reply?',
+        a: 'Unlimited chats and replies between 8am and 9pm. I aim to reply within 2–3 hours, if not straight away; weekends may take 4–8 hours.',
+      },
+      {
+        q: 'What can I ask about on text support?',
+        a: 'Breastfeeding questions big and small — growth spurts, feeding changes, developmental leaps, sleep, play, and comfort. Feeding assessments, weaning plans, mastitis, supply issues, and pumping plans need an in-depth consultation.',
+      },
+    ],
+  },
+  {
     id: 'about-en',
     path: '/about/',
     lang: 'en',
@@ -612,6 +653,47 @@ export const pages = [
       {
         q: 'Waar is die praktyk?',
         a: 'By my tuiskantoor in Stellenbosch. Volledige adres word gestuur wanneer jy bespreek.',
+      },
+    ],
+  },
+  {
+    id: 'whatsapp-teks-ondersteuning-af',
+    path: '/af/whatsapp-teks-ondersteuning/',
+    lang: 'af',
+    hreflangPath: '/whatsapp-text-support/',
+    title: 'WhatsApp-teks-ondersteuning | Borsvoedinghulp op afroep | PerleMama Lactation',
+    description:
+      'Onbeperkte teksgebaseerde WhatsApp-borsvoedinghulp van Annette Nel, LC (CBI). Een week R350, twee weke R550, een maand R900 — antwoorde, aanmoediging, stemnotas en videodemonstrasies.',
+    h1: 'WhatsApp-teks-ondersteuning — laktasiesteun op afroep',
+    lead:
+      'Onbeperkte teksgebaseerde WhatsApp-borsvoedinghulp: kry antwoorde, beradingsteun en aanmoediging deur elke fase van jou baba se ontwikkeling, wanneer jy ook al ’n boodskap stuur.',
+    type: 'service',
+    serviceKey: 'whatsapp',
+    image: '/images/whatsapp-text-support-on-call-lactation-perlemama.jpg',
+    imageAlt:
+      'Laktasiesteun op Afroep-plakkaat — onbeperkte teksgebaseerde WhatsApp-borsvoedinghulp: een week R350, twee weke R550, een maand R900, met Annette Nel, LC',
+    secondaryImage: '/images/whatsapp-text-support-terms-how-it-works-perlemama.jpg',
+    secondaryImageAlt:
+      'WhatsApp-teks-ondersteuning se bepalings en hoe dit werk — onbeperkte geselsies en antwoorde tussen 08:00 en 21:00, met Annette Nel, LC',
+    body: [
+      'Borsvoeding hoef nie ’n stryd te wees as jy die regte inligting en ondersteuning het nie. Met tekssteun op afroep is ek net hier by jou: stuur ’n WhatsApp-boodskap en kry antwoorde op borsvoedingvrae, beradingsteun, aanmoediging, en al die inligting wat jy nodig het deur elke fase van jou baba se ontwikkeling — weeksdae en naweke, aande ingesluit.',
+      'Ons dek wat jy rondom groeispurte kan verwag, hoe voeding verander, ontwikkelingspronge, en wenke vir slaap, speel en gemak. Ondersteuning kom as teks of stemnotas, met videodemonstrasies, artikels, grafika, en infografika of leesmateriaal waar dit help — asook regstreekse videodemonstrasies indien nodig.',
+      'Pakkette: een week onbeperkte ondersteuning R350, twee weke onbeperkte ondersteuning R550, of een maand onbeperkte ondersteuning R900. Sodra jou inteken tydperk uitgeloop het, kan jy ’n faktuur aanvra om dit weer te aktiveer — dit aktiveer op bewys van betaling (POP).',
+      'Hoe dit werk: onbeperkte WhatsApp-geselsies en antwoorde tussen 08:00 en 21:00. Ek sal probeer om binne 2–3 uur te antwoord, indien nie dadelik met ontvangs van jou boodskap nie; naweke kan antwoorde 4–8 uur neem. Ek antwoord per teks of stemnota, en ’n stemoproep kan in spesiale omstandighede aangevra word.',
+      'Teks-ondersteuning is vir voortgaande vrae en aanmoediging — sommige dinge het eerder ’n indringende konsultasie nodig: voedingassesserings, speenplanne, mastitis, voorraadkwessies, terug-werk-toe- en pompplanne, en ernstige drinkprobleme.',
+    ],
+    faqs: [
+      {
+        q: 'Hoe begin ek WhatsApp-teks-ondersteuning?',
+        a: 'Stuur vir my ’n WhatsApp-boodskap en kies jou pakket — een week (R350), twee weke (R550), of een maand (R900). Jou ondersteuning aktiveer op bewys van betaling.',
+      },
+      {
+        q: 'Wanneer kan ek boodskappe stuur, en hoe vinnig antwoord jy?',
+        a: 'Onbeperkte geselsies en antwoorde tussen 08:00 en 21:00. Ek mik om binne 2–3 uur te antwoord, indien nie dadelik nie; naweke kan 4–8 uur neem.',
+      },
+      {
+        q: 'Waaroor kan ek op teks-ondersteuning vra?',
+        a: 'Borsvoedingvrae groot en klein — groeispurte, voedingsveranderinge, ontwikkelingspronge, slaap, speel en gemak. Voedingassesserings, speenplanne, mastitis, voorraadkwessies en pompplanne het ’n indringende konsultasie nodig.',
       },
     ],
   },

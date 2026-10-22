@@ -68,7 +68,7 @@ function buildBody(page) {
   </ul>
   <h2>${af ? 'Nog meer?' : 'Need more?'}</h2>
   <ul>
-    <li>${af ? 'Teks-ondersteuning' : 'Text support'}</li>
+    <li><a href="${af ? '/af/whatsapp-teks-ondersteuning/' : '/whatsapp-text-support/'}">${af ? 'Teks-ondersteuning' : 'Text support'}</a></li>
     <li>${af ? 'Voorgeborete voorbereiding' : 'Pre-birth prep'}</li>
     <li><a href="${af ? '/af/spesialiteit-sessies/' : '/speciality-sessions/'}">${af ? 'Spesialiteit-sessie' : 'Speciality session'}</a></li>
   </ul>
@@ -116,6 +116,9 @@ ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit i
   const flyer = page.image
     ? `<p><img src="${page.image}" alt="${escapeHtml(page.imageAlt || page.h1)}"></p>`
     : ''
+  const secondaryFlyer = page.secondaryImage
+    ? `<p><img src="${page.secondaryImage}" alt="${escapeHtml(page.secondaryImageAlt || page.h1)}"></p>`
+    : ''
 
   return `
 <article>
@@ -124,6 +127,7 @@ ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit i
   ${flyer}
   ${paras}
   ${includes}
+  ${secondaryFlyer}
   ${resources}
   ${sections}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}

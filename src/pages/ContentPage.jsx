@@ -253,6 +253,14 @@ export default function ContentPage({ page }) {
                   </Link>
                 </p>
               )}
+              {page.secondaryImage && (
+                <img
+                  className="content-body-image"
+                  src={page.secondaryImage}
+                  alt={page.secondaryImageAlt || page.h1}
+                  loading="lazy"
+                />
+              )}
             </div>
           </div>
         </section>

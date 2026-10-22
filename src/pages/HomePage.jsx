@@ -167,7 +167,10 @@ export default function HomePage({ page }) {
         <div className="container">
           <h2 className="section-title">{af ? 'Nog meer?' : 'Need more?'}</h2>
           <div className="services-grid">
-            <div className="service-card">
+            <Link
+              to={af ? '/af/whatsapp-teks-ondersteuning/' : '/whatsapp-text-support/'}
+              className="service-card service-card-link"
+            >
               <div className="service-image">
                 <img
                   src="/images/whatsapp-text-support-breastfeeding-perlemama.png"
@@ -183,14 +186,14 @@ export default function HomePage({ page }) {
               <p>
                 <strong>
                   {af
-                    ? 'Opvolg en vrae tussen sessies via WhatsApp.'
-                    : 'Follow-up and questions between sessions via WhatsApp.'}
+                    ? 'Onbeperkte WhatsApp-hulp, wanneer jy dit nodig het.'
+                    : 'Unlimited WhatsApp help, whenever you need it.'}
                 </strong>
                 {af
-                  ? 'Na ’n konsultasie bly ek beskikbaar vir teks-gebaseerde steun sodat jy nie alleen voel met die volgende vraag nie. Tariewe en pakkette op aanvraag.'
-                  : 'After a consult I stay available for text-based support so you are not alone with the next question. Rates and packages on enquiry.'}
+                  ? 'Kry antwoorde, aanmoediging en inligting deur elke fase van jou baba se ontwikkeling. Een week R350 · Twee weke R550 · Een maand R900.'
+                  : 'Get answers, encouragement, and information through every phase of your baby’s development. One week R350 · Two weeks R550 · One month R900.'}
               </p>
-            </div>
+            </Link>
             <Link
               to={af ? '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/' : '/speciality-sessions/pre-birth-prep/'}
               className="service-card service-card-link"
