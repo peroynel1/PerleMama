@@ -170,7 +170,7 @@ export default function HomePage({ page }) {
             <div className="service-card">
               <div className="service-image">
                 <img
-                  src="/images/online-breastfeeding-consultation.jpg"
+                  src="/images/whatsapp-text-support-breastfeeding-perlemama.png"
                   alt={
                     af
                       ? 'WhatsApp teks-ondersteuning ná borsvoeding konsultasie'
@@ -194,7 +194,7 @@ export default function HomePage({ page }) {
             <div className="service-card">
               <div className="service-image">
                 <img
-                  src="/images/stellenbosch-lactation-home-office.jpg"
+                  src="/images/pre-birth-breastfeeding-preparation-pregnant-belly.png"
                   alt={
                     af
                       ? 'Voorgeborete borsvoeding voorbereiding in Stellenbosch'
@@ -221,7 +221,7 @@ export default function HomePage({ page }) {
             >
               <div className="service-image">
                 <img
-                  src="/images/breastfeeding-home-visit-western-cape.jpg"
+                  src="/images/speciality-session-breast-pump-flange-support.png"
                   alt={
                     af
                       ? 'Spesialiteit borsvoeding sessie — pomp, terug werk toe, refluks'
