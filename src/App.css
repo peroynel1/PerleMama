@@ -1152,21 +1152,6 @@
   display: block;
 }
 
-.speciality-session {
-  margin-bottom: 2.5rem;
-}
-
-.speciality-session:last-child {
-  margin-bottom: 0;
-}
-
-.speciality-session-title {
-  font-family: 'Tan Pearl', 'Playfair Display', Georgia, serif;
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 0.75rem;
-}
-
 .speciality-includes {
   font-family: 'Glacial Indifference', 'Source Sans 3', sans-serif;
   color: #555;

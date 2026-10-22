@@ -373,6 +373,10 @@ export const pages = [
     sections: [
       {
         heading: 'Pre-birth prep session',
+        path: '/speciality-sessions/pre-birth-prep/',
+        hreflangPath: '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/',
+        caption:
+          'Prepare for the first days and weeks — latch, positioning, newborn behaviour, and feeding confidently, whatever your birth looks like.',
         body: [
           'The first few days with your new baby are the most important when it comes to establishing lactation — and sadly this is also where many breastfeeding journeys get off on the wrong foot. If you’re well prepared, you won’t stress about unnecessary formula supplementation, low supply, baby not latching, or getting supply going if baby has a NICU stay or is born prematurely.',
           'Caesarean sections are very common in South Africa and come with extra challenges to lactation. Being separated from your baby, the effect of birth drugs and method of delivery on baby’s system, and other physical interventions can make breastfeeding challenging in the first few days. We cover all of this and how to make sure you breastfeed successfully no matter how your birth turns out.',
@@ -385,6 +389,10 @@ export const pages = [
       },
       {
         heading: 'Starting solids — gut health focused',
+        path: '/speciality-sessions/starting-solids-gut-health/',
+        hreflangPath: '/af/spesialiteit-sessies/vaste-kos-dermgesondheid/',
+        caption:
+          'Evidence-based starting solids that supports gut health — timing, allergies, portions, and the foods that help (and don’t).',
         body: [
           'Lots of advice on starting solids can be outdated or harmful. Gut health is shaped and affected from birth by hospital interventions like c-sections, formula supplements, antibiotic use, a NICU stay, or passed on to our babies directly from our own gut microbiome. Good gut health directly impacts your body’s immune system, handling inflammation, regulating mood, and how we absorb crucial nutrients. Get the info on the evidence-based way to start solids in a way that supports gut health.',
           'We chat about the right time to start solids, whether a meal plan is needed, allergies, portion sizes, and which foods support gut health (and which don’t!).',
@@ -394,6 +402,10 @@ export const pages = [
       },
       {
         heading: 'Reflux support',
+        path: '/speciality-sessions/reflux-support/',
+        hreflangPath: '/af/spesialiteit-sessies/refluks-ondersteuning/',
+        caption:
+          'Work out whether reflux is normal or something deeper, with practical strategies and a feeding observation.',
         body: [
           'Is my baby’s reflux normal, or is something deeper going on? This can be a very frustrating question, and through deeper investigation we can uncover the source!',
           'Many things can influence reflux that seems painful or worse than normal. In this session and feeding observation we get to the root of why baby is struggling, cover practical management strategies, how true reflux disease is diagnosed, and discuss the risks of reflux medication and whether they’re needed.',
@@ -404,6 +416,10 @@ export const pages = [
       },
       {
         heading: 'Shield weaning',
+        path: '/speciality-sessions/shield-weaning/',
+        hreflangPath: '/af/spesialiteit-sessies/tepelskild-speen/',
+        caption:
+          'Gentle, tailored support to move away from nipple shields and back to nursing without them.',
         body: [
           'While nipple shields can be a helpful temporary tool when nursing in some circumstances, long term they have risks to latch and milk supply, and they’re fiddly! Luckily, with gentle support and a plan, we can teach baby to nurse without them. We get to the root of why they were needed, address latch issues, and go through tailored strategies to move away from needing to use them.',
           'Often this is a process that needs lots of patience, and multiple sessions and continuing support may be necessary. This package is flexible, and video sessions can be exchanged into text-based support where needed. I’m with you every step.',
@@ -413,12 +429,20 @@ export const pages = [
       },
       {
         heading: 'Sleep support',
+        path: '/speciality-sessions/sleep-support/',
+        hreflangPath: '/af/spesialiteit-sessies/slaap-ondersteuning/',
+        caption:
+          'Feeding-aware sleep support tailored to your baby’s age and your family’s setup — details on enquiry.',
         body: [
           'Every family’s sleep situation is different, and the right support depends on your baby’s age, feeding pattern, and your family’s setup. Get in touch on WhatsApp and tell me a little about what nights look like at the moment — I’ll confirm what a sleep support session would include for your situation.',
         ],
       },
       {
         heading: 'Fertility support',
+        path: '/speciality-sessions/fertility-support/',
+        hreflangPath: '/af/spesialiteit-sessies/vrugbaarheid-ondersteuning/',
+        caption:
+          'Understand how breastfeeding hormones affect fertility, and plan conception without automatically weaning first.',
         body: [
           'Many moms conceive while breastfeeding, but for some this may be a little more challenging. Breastfeeding hormones can impact fertility, and if you’re struggling to conceive while breastfeeding it is worth understanding how this works. In this session we cover how hormones influence fertility, and how you can support conception if breastfeeding hormones are inhibiting it in any way. Many doctors advise full weaning from the start of trying to conceive — this may not always be necessary! Let’s chat about your individual situation and work out a plan that supports everyone involved. We also cover fertility treatments and their impact on breastfeeding if needed.',
         ],
@@ -427,6 +451,10 @@ export const pages = [
       },
       {
         heading: 'Weaning support',
+        path: '/speciality-sessions/weaning-support/',
+        hreflangPath: '/af/spesialiteit-sessies/speen-ondersteuning/',
+        caption:
+          'A timeline and doable plan to end — or comfortably extend — your breastfeeding journey, with text support included.',
         body: [
           'All breastfeeding journeys come to an end, and this can be an emotional time for mom and toddler when either feels it’s time. Whatever your needs, we work together to create a timeline and doable weaning plan that respects and honors the breastfeeding relationship. We cover parent-led day or night weaning, or, if you don’t want to fully wean but just need some support and ideas, strategies to extend the breastfeeding relationship in a way that is comfortable and sustainable for both you and your toddler. We also cover the hormonal changes one can expect after weaning, toddler diet once milk intake decreases, and sleep setup if that’s part of the weaning journey.',
           'Breastfeeding is more than just milk — it’s a relationship of comfort and security. How we approach the end of it matters deeply, and I’m very passionate about doing this in a way that doesn’t break the bond, but nurtures it into the next phase of mothering!',
@@ -436,6 +464,10 @@ export const pages = [
       },
       {
         heading: 'Breastfeeding after one year',
+        path: '/speciality-sessions/breastfeeding-after-one-year/',
+        hreflangPath: '/af/spesialiteit-sessies/borsvoeding-na-een-jaar/',
+        caption:
+          'Toddler nursing behaviour, supply, boundaries, pumping at work, and what changes after the first year.',
         body: [
           'You’ve made it to one year! Now what? What changes? Quite a bit! In this session we cover toddler nursing behaviour, what happens to milk supply, pumping at work and stopping if you wish, nursing boundaries, how your toddler’s diet can change and adapt, the benefits of extended breastfeeding, and normal developmental leaps — and what you can expect nursing through all the next sleep, motor, and language changes toddlers experience.',
         ],
@@ -768,6 +800,10 @@ export const pages = [
     sections: [
       {
         heading: 'Voorgeboorte-voorbereidingsessie',
+        path: '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/',
+        hreflangPath: '/speciality-sessions/pre-birth-prep/',
+        caption:
+          'Berei voor vir die eerste dae en weke — aanhaking, posisionering, pasgebore gedrag, en vol vertroue voed, maak nie saak hoe jou geboorte lyk nie.',
         body: [
           'Die eerste paar dae met jou nuwe baba is die belangrikste wanneer dit kom by die vestiging van laktasie — en ongelukkig is dit ook waar baie borsvoedingsreise op die verkeerde voet begin. As jy goed voorbereid is, hoef jy nie te stres oor onnodige formule-byvoeding, lae melkvoorraad, ’n baba wat nie aanhak nie, of om jou voorraad aan die gang te kry as jou baba in die NICU moet bly of prematuur gebore word nie.',
           'Keisersnitte is baie algemeen in Suid-Afrika en bring ekstra uitdagings vir laktasie mee. Om van jou baba geskei te wees, die effek van geboortemedikasie en die geboortemetode op jou baba se sisteem, en ander fisiese ingrypings kan borsvoeding in die eerste paar dae uitdagend maak. Ons dek dit alles, en hoe om seker te maak jy borsvoed suksesvol, maak nie saak hoe jou geboorte uitdraai nie.',
@@ -780,6 +816,10 @@ export const pages = [
       },
       {
         heading: 'Begin met vaste kos — fokus op dermgesondheid',
+        path: '/af/spesialiteit-sessies/vaste-kos-dermgesondheid/',
+        hreflangPath: '/speciality-sessions/starting-solids-gut-health/',
+        caption:
+          'Bewysgebaseerde begin van vaste kos wat dermgesondheid ondersteun — tydsberekening, allergieë, porsies, en die kosse wat help (en nie help nie).',
         body: [
           'Baie raad oor die begin van vaste kos kan verouderd of skadelik wees. Dermgesondheid word van geboorte af gevorm en beïnvloed deur hospitaalingrypings soos keisersnitte, formule-byvoeding, antibiotikagebruik, ’n NICU-verblyf, of word direk vanaf ons eie dermmikrobioom aan ons babas oorgedra. Goeie dermgesondheid het ’n direkte impak op jou liggaam se immuunstelsel, die hantering van inflammasie, die regulering van bui, en hoe ons deurslaggewende voedingstowwe absorbeer. Kry die inligting oor die bewysgebaseerde manier om met vaste kos te begin op ’n manier wat dermgesondheid ondersteun.',
           'Ons gesels oor die regte tyd om met vaste kos te begin, of ’n maaltydplan nodig is, allergieë, porsiegroottes, en watter kosse dermgesondheid ondersteun (en watter nie!).',
@@ -789,6 +829,10 @@ export const pages = [
       },
       {
         heading: 'Refluksondersteuning',
+        path: '/af/spesialiteit-sessies/refluks-ondersteuning/',
+        hreflangPath: '/speciality-sessions/reflux-support/',
+        caption:
+          'Werk uit of refluks normaal is of iets diepers, met praktiese strategieë en ’n voedingswaarneming.',
         body: [
           'Is my baba se refluks normaal, of gaan daar iets diepers aan? Dit kan ’n baie frustrerende vraag wees, en deur dieper ondersoek kan ons die bron ontdek!',
           'Baie dinge kan refluks beïnvloed wat pynlik of erger as normaal lyk. In hierdie sessie en voedingswaarneming kom ons tot die wortel van hoekom jou baba sukkel, dek praktiese bestuurstrategieë, hoe ware reflukssiekte gediagnoseer word, en bespreek die risiko’s van refluksmedikasie en of dit nodig is.',
@@ -799,6 +843,10 @@ export const pages = [
       },
       {
         heading: 'Speen van die tepelskild af',
+        path: '/af/spesialiteit-sessies/tepelskild-speen/',
+        hreflangPath: '/speciality-sessions/shield-weaning/',
+        caption:
+          'Sagte, pasgemaakte ondersteuning om weg te beweeg van tepelskilde en terug na drink sonder hulle.',
         body: [
           'Hoewel tepelskilde in sommige omstandighede ’n nuttige tydelike hulpmiddel kan wees tydens borsvoeding, hou langtermyngebruik risiko’s in vir aanhaking en melkvoorraad, en hulle is omslagtig! Gelukkig kan ons, met sagte ondersteuning en ’n plan, jou baba leer om sonder hulle te drink. Ons kom tot die wortel van hoekom hulle nodig was, spreek aanhakingskwessies aan, en werk deur pasgemaakte strategieë om weg te beweeg van die behoefte om hulle te gebruik.',
           'Dit is dikwels ’n proses wat baie geduld verg, en verskeie sessies en voortgesette ondersteuning mag nodig wees. Hierdie pakket is buigsaam, en videosessies kan waar nodig vir teksgebaseerde ondersteuning verruil word. Ek is elke stap by jou.',
@@ -808,12 +856,20 @@ export const pages = [
       },
       {
         heading: 'Slaapondersteuning',
+        path: '/af/spesialiteit-sessies/slaap-ondersteuning/',
+        hreflangPath: '/speciality-sessions/sleep-support/',
+        caption:
+          'Voedingsbewuste slaapondersteuning pasgemaak vir jou baba se ouderdom en jou gesin se opstelling — besonderhede op navraag.',
         body: [
           'Elke gesin se slaapsituasie is anders, en die regte ondersteuning hang af van jou baba se ouderdom, voedingspatroon en jou gesin se opstelling. Kontak my op WhatsApp en vertel my ’n bietjie van hoe die nagte tans lyk — ek sal bevestig wat ’n slaapondersteuningsessie vir julle situasie sou insluit.',
         ],
       },
       {
         heading: 'Vrugbaarheidsondersteuning',
+        path: '/af/spesialiteit-sessies/vrugbaarheid-ondersteuning/',
+        hreflangPath: '/speciality-sessions/fertility-support/',
+        caption:
+          'Verstaan hoe borsvoedingshormone vrugbaarheid beïnvloed, en beplan konsepsie sonder om outomaties eers te speen.',
         body: [
           'Baie mammas raak swanger terwyl hulle borsvoed, maar vir sommige kan dit ’n bietjie meer uitdagend wees. Borsvoedingshormone kan vrugbaarheid beïnvloed, en as jy sukkel om swanger te raak terwyl jy borsvoed, is dit die moeite werd om te verstaan hoe dit werk. In hierdie sessie dek ons hoe hormone vrugbaarheid beïnvloed, en hoe jy konsepsie kan ondersteun as borsvoedingshormone dit op enige manier inhibeer. Baie dokters raai volle speen aan van die begin van probeer om swanger te raak — dit is dalk nie altyd nodig nie! Kom ons gesels oor jou individuele situasie en werk ’n plan uit wat almal betrokke ondersteun. Ons dek ook vrugbaarheidsbehandelings en hul impak op borsvoeding, indien nodig.',
         ],
@@ -822,6 +878,10 @@ export const pages = [
       },
       {
         heading: 'Speenondersteuning',
+        path: '/af/spesialiteit-sessies/speen-ondersteuning/',
+        hreflangPath: '/speciality-sessions/weaning-support/',
+        caption:
+          '’n Tydlyn en doenbare plan om jou borsvoedingsreis te beëindig — of gemaklik te verleng — met teksondersteuning ingesluit.',
         body: [
           'Alle borsvoedingsreise kom tot ’n einde, en dit kan ’n emosionele tyd vir mamma en kleuter wees wanneer een van hulle voel dis tyd. Wat jou behoeftes ook al is, werk ons saam om ’n tydlyn en doenbare speenplan te skep wat die borsvoedingsverhouding respekteer en eer. Ons dek ouergeleide dag- of nagspeen, of, as jy nie ten volle wil speen nie maar net ondersteuning en idees nodig het, strategieë om die borsvoedingsverhouding te verleng op ’n manier wat gemaklik en volhoubaar is vir jou én jou kleuter. Ons dek ook die hormonale veranderinge wat ’n mens ná speen kan verwag, kleuterdieet sodra melkinname afneem, en slaapopstelling as dit deel van die speenreis is.',
           'Borsvoeding is meer as net melk — dit is ’n verhouding van gemak en sekuriteit. Hoe ons die einde daarvan benader, maak diep saak, en ek is baie passievol daaroor om dit te doen op ’n manier wat nie die band breek nie, maar dit koester na die volgende fase van moederskap!',
@@ -831,6 +891,10 @@ export const pages = [
       },
       {
         heading: 'Borsvoeding ná een jaar',
+        path: '/af/spesialiteit-sessies/borsvoeding-na-een-jaar/',
+        hreflangPath: '/speciality-sessions/breastfeeding-after-one-year/',
+        caption:
+          'Kleuters se drinkgedrag, melkvoorraad, grense, pomp by die werk, en wat ná die eerste jaar verander.',
         body: [
           'Jy het een jaar gemaak! Wat nou? Wat verander? Nogal baie! In hierdie sessie dek ons kleuters se drinkgedrag, wat met melkvoorraad gebeur, pomp by die werk en ophou as jy wil, drinkgrense, hoe jou kleuter se dieet kan verander en aanpas, die voordele van verlengde borsvoeding, en normale ontwikkelingspronge — en wat jy kan verwag terwyl jy deur al die volgende slaap-, motor- en taalveranderinge drink wat kleuters ervaar.',
         ],
@@ -849,6 +913,33 @@ export const pages = [
     ],
   },
 ]
+
+// Each speciality section becomes its own dedicated page (overview keeps cards).
+for (const overview of pages.filter((p) => p.type === 'speciality')) {
+  for (const s of overview.sections || []) {
+    pages.push({
+      id: `speciality-${overview.lang}-${s.path.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '')}`,
+      path: s.path,
+      lang: overview.lang,
+      hreflangPath: s.hreflangPath,
+      title:
+        overview.lang === 'af'
+          ? `${s.heading} | Spesialiteit-sessie | PerleMama Lactation`
+          : `${s.heading} | Speciality session | PerleMama Lactation`,
+      description: s.caption,
+      h1: s.heading,
+      lead: s.caption,
+      type: 'speciality-session',
+      body: s.body || [],
+      includes: s.includes,
+      faqs: overview.faqs || [],
+    })
+  }
+}
+
+export function getSpecialitySessionPages(lang) {
+  return pages.filter((p) => p.type === 'speciality-session' && p.lang === lang)
+}
 
 export function getPageByPath(pathname) {
   const normalized =

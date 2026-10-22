@@ -79,19 +79,31 @@ function buildBody(page) {
 </article>`
   }
 
-  const sections = (page.sections || [])
-    .map(
-      (s) => `<h2>${escapeHtml(s.heading)}</h2>
+  const sections =
+    page.type === 'speciality'
+      ? `<ul>${(page.sections || [])
+          .map(
+            (s) =>
+              `<li><a href="${s.path}">${escapeHtml(s.heading)}</a> — ${escapeHtml(s.caption || '')}</li>`,
+          )
+          .join('\n')}</ul>`
+      : (page.sections || [])
+          .map(
+            (s) => `<h2>${escapeHtml(s.heading)}</h2>
 ${(s.body || []).map((p) => `<p>${escapeHtml(p)}</p>`).join('\n')}
 ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}</strong>${escapeHtml(s.includes)}</p>` : ''}`,
-    )
-    .join('\n')
+          )
+          .join('\n')
+  const includes = page.includes
+    ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}</strong>${escapeHtml(page.includes)}</p>`
+    : ''
 
   return `
 <article>
   <h1>${escapeHtml(page.h1)}</h1>
   <p>${escapeHtml(page.lead)}</p>
   ${paras}
+  ${includes}
   ${sections}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>

@@ -3,7 +3,7 @@ import Seo from '../components/Seo'
 import BookingForm from '../components/BookingForm'
 import { QuoteStrip, QuoteGallery } from '../components/QuoteFiller'
 import { testimonials } from '../data/testimonials'
-import { getProblemPages, getServicePages } from '../data/pages'
+import { getProblemPages, getServicePages, getSpecialitySessionPages } from '../data/pages'
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
@@ -226,32 +226,42 @@ export default function ContentPage({ page }) {
                   {para}
                 </p>
               ))}
+              {page.includes && (
+                <p className="speciality-includes">
+                  <strong>
+                    {af ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}
+                  </strong>
+                  {page.includes}
+                </p>
+              )}
+              {page.type === 'speciality-session' && (
+                <p className="about-text">
+                  <Link
+                    to={af ? '/af/spesialiteit-sessies/' : '/speciality-sessions/'}
+                    className="blog-read-more"
+                  >
+                    {af ? '← Alle spesialiteit-sessies' : '← All speciality sessions'}
+                  </Link>
+                </p>
+              )}
             </div>
           </div>
         </section>
       )}
 
-      {page.sections?.length > 0 && (
-        <section className="about">
+      {page.type === 'speciality' && (
+        <section className="services">
           <div className="container">
-            <div className="about-card content-body-card">
-              {page.sections.map((s) => (
-                <article key={s.heading} className="speciality-session">
-                  <h2 className="speciality-session-title">{s.heading}</h2>
-                  {(s.body || []).map((para) => (
-                    <p key={para.slice(0, 48)} className="about-text">
-                      {para}
-                    </p>
-                  ))}
-                  {s.includes && (
-                    <p className="speciality-includes">
-                      <strong>
-                        {af ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}
-                      </strong>
-                      {s.includes}
-                    </p>
-                  )}
-                </article>
+            <div className="services-grid content-topics-grid">
+              {getSpecialitySessionPages(page.lang).map((s) => (
+                <Link
+                  key={s.path}
+                  to={s.path}
+                  className="service-card service-card-link content-topic-card"
+                >
+                  <h3>{s.h1}</h3>
+                  <p>{s.lead}</p>
+                </Link>
               ))}
             </div>
           </div>
@@ -261,7 +271,8 @@ export default function ContentPage({ page }) {
       {(page.type === 'problem' ||
         page.type === 'service' ||
         page.type === 'about' ||
-        page.type === 'speciality') && (
+        page.type === 'speciality' ||
+        page.type === 'speciality-session') && (
         <QuoteStrip seed={page.id} lang={page.lang} />
       )}
 
@@ -322,9 +333,10 @@ export default function ContentPage({ page }) {
 
       {page.type !== 'connect' && <ReviewStrip lang={page.lang} />}
 
-      {(page.type === 'problem' || page.type === 'service' || page.type === 'speciality') && (
-        <BookCta lang={page.lang} />
-      )}
+      {(page.type === 'problem' ||
+        page.type === 'service' ||
+        page.type === 'speciality' ||
+        page.type === 'speciality-session') && <BookCta lang={page.lang} />}
     </main>
   )
 }
