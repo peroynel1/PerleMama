@@ -319,6 +319,9 @@ export const pages = [
     description:
       'Back-to-work breastfeeding sessions: pump choice, flange fit, schedule, and keeping supply. Online with Annette Nel, LC (CBI), or in Stellenbosch.',
     h1: 'Returning to work and pumping',
+    image: '/images/breastfeeding-back-to-work-pumping-consult-perlemama.png',
+    imageAlt:
+      'Breastfeeding and going Back to Work flyer — live video consultation, 45 minutes, R450, with Annette Nel, LC (CBI)',
     lead:
       'Going back to work does not have to end breastfeeding. We choose a pump approach, flange fit, and a realistic schedule that fits your day.',
     type: 'problem',
@@ -373,6 +376,9 @@ export const pages = [
     sections: [
       {
         heading: 'Pre-birth prep session',
+        image: '/images/breastfeeding-pre-birth-prep-session-perlemama.jpg',
+        imageAlt:
+          'Breastfeeding Pre-Birth Prep Session flyer — 80-minute live video session, R650, with Annette Nel, LC (CBI)',
         path: '/speciality-sessions/pre-birth-prep/',
         hreflangPath: '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/',
         caption:
@@ -389,6 +395,9 @@ export const pages = [
       },
       {
         heading: 'Starting solids — gut health focused',
+        image: '/images/starting-solids-gut-health-session-perlemama.jpg',
+        imageAlt:
+          'Starting Solids Support Session flyer — how you start solids influences your baby’s lifelong gut health, 40 minutes with Annette Nel, LC (CBI)',
         path: '/speciality-sessions/starting-solids-gut-health/',
         hreflangPath: '/af/spesialiteit-sessies/vaste-kos-dermgesondheid/',
         caption:
@@ -416,6 +425,9 @@ export const pages = [
       },
       {
         heading: 'Shield weaning',
+        image: '/images/shield-weaning-support-nipple-shields-perlemama.jpg',
+        imageAlt:
+          'Shield Weaning Support flyer — 2 video sessions and 3 weeks of text-based support, R1500, with Annette Nel, LC',
         path: '/speciality-sessions/shield-weaning/',
         hreflangPath: '/af/spesialiteit-sessies/tepelskild-speen/',
         caption:
@@ -429,6 +441,9 @@ export const pages = [
       },
       {
         heading: 'Sleep support',
+        image: '/images/sleep-support-dudu-baba-perlemama.jpg',
+        imageAlt:
+          'Dudu Baba Sleep Support flyer — live video consultation, 40 minutes, R400, with Annette Nel, LC (CBI)',
         path: '/speciality-sessions/sleep-support/',
         hreflangPath: '/af/spesialiteit-sessies/slaap-ondersteuning/',
         caption:
@@ -439,6 +454,9 @@ export const pages = [
       },
       {
         heading: 'Fertility support',
+        image: '/images/fertility-while-breastfeeding-session-perlemama.jpg',
+        imageAlt:
+          'Fertility While Breastfeeding flyer — info video session plus booklet, R500, with Annette Nel, LC',
         path: '/speciality-sessions/fertility-support/',
         hreflangPath: '/af/spesialiteit-sessies/vrugbaarheid-ondersteuning/',
         caption:
@@ -451,6 +469,9 @@ export const pages = [
       },
       {
         heading: 'Weaning support',
+        image: '/images/weaning-support-weaning-plan-perlemama.jpg',
+        imageAlt:
+          'Weaning Support flyer — weaning plan plus 1 week unlimited text support, R500, with Annette Nel, LC',
         path: '/speciality-sessions/weaning-support/',
         hreflangPath: '/af/spesialiteit-sessies/speen-ondersteuning/',
         caption:
@@ -464,6 +485,9 @@ export const pages = [
       },
       {
         heading: 'Breastfeeding after one year',
+        image: '/images/breastfeeding-after-one-year-perlemama.jpg',
+        imageAlt:
+          'Breastfeeding After One Year flyer — live video consultation, 40 minutes, R400, with Annette Nel, LC (CBI)',
         path: '/speciality-sessions/breastfeeding-after-one-year/',
         hreflangPath: '/af/spesialiteit-sessies/borsvoeding-na-een-jaar/',
         caption:
@@ -757,6 +781,9 @@ export const pages = [
     description:
       'Terug-werk-toe borsvoeding: pompkeuse, flange-pas, skedule, en voorraad beskerm. Aanlyn of in Stellenbosch met Annette Nel.',
     h1: 'Terug werk toe en pomp',
+    image: '/images/breastfeeding-back-to-work-pumping-consult-perlemama.png',
+    imageAlt:
+      'Borsvoeding en Terug Werk Toe-plakkaat — regstreekse videokonsultasie, 45 minute, R450, met Annette Nel, LC (CBI)',
     lead:
       'Terug werk toe hoef nie borsvoeding te eindig nie. Ons kies ’n pompbenadering, flange-pas, en ’n realistiese skedule.',
     type: 'problem',
@@ -800,6 +827,9 @@ export const pages = [
     sections: [
       {
         heading: 'Voorgeboorte-voorbereidingsessie',
+        image: '/images/breastfeeding-pre-birth-prep-session-perlemama.jpg',
+        imageAlt:
+          'Borsvoeding Voorgeboorte-voorbereidingsessie-plakkaat — 80 minute regstreekse videosessie, R650, met Annette Nel, LC (CBI)',
         path: '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/',
         hreflangPath: '/speciality-sessions/pre-birth-prep/',
         caption:
@@ -816,6 +846,9 @@ export const pages = [
       },
       {
         heading: 'Begin met vaste kos — fokus op dermgesondheid',
+        image: '/images/starting-solids-gut-health-session-perlemama.jpg',
+        imageAlt:
+          'Begin met Vaste Kos-ondersteuningsessie-plakkaat — hoe jy met vaste kos begin, beïnvloed jou baba se lewenslange dermgesondheid, 40 minute met Annette Nel, LC (CBI)',
         path: '/af/spesialiteit-sessies/vaste-kos-dermgesondheid/',
         hreflangPath: '/speciality-sessions/starting-solids-gut-health/',
         caption:
@@ -843,6 +876,9 @@ export const pages = [
       },
       {
         heading: 'Speen van die tepelskild af',
+        image: '/images/shield-weaning-support-nipple-shields-perlemama.jpg',
+        imageAlt:
+          'Tepelskild-speenondersteuning-plakkaat — 2 videosessies en 3 weke se teksgebaseerde ondersteuning, R1500, met Annette Nel, LC',
         path: '/af/spesialiteit-sessies/tepelskild-speen/',
         hreflangPath: '/speciality-sessions/shield-weaning/',
         caption:
@@ -856,6 +892,9 @@ export const pages = [
       },
       {
         heading: 'Slaapondersteuning',
+        image: '/images/sleep-support-dudu-baba-perlemama.jpg',
+        imageAlt:
+          'Dudu Baba Slaapondersteuning-plakkaat — regstreekse videokonsultasie, 40 minute, R400, met Annette Nel, LC (CBI)',
         path: '/af/spesialiteit-sessies/slaap-ondersteuning/',
         hreflangPath: '/speciality-sessions/sleep-support/',
         caption:
@@ -866,6 +905,9 @@ export const pages = [
       },
       {
         heading: 'Vrugbaarheidsondersteuning',
+        image: '/images/fertility-while-breastfeeding-session-perlemama.jpg',
+        imageAlt:
+          'Vrugbaarheid tydens Borsvoeding-plakkaat — inligtingsvideosessie plus boekie, R500, met Annette Nel, LC',
         path: '/af/spesialiteit-sessies/vrugbaarheid-ondersteuning/',
         hreflangPath: '/speciality-sessions/fertility-support/',
         caption:
@@ -878,6 +920,9 @@ export const pages = [
       },
       {
         heading: 'Speenondersteuning',
+        image: '/images/weaning-support-weaning-plan-perlemama.jpg',
+        imageAlt:
+          'Speenondersteuning-plakkaat — speenplan plus 1 week onbeperkte teksondersteuning, R500, met Annette Nel, LC',
         path: '/af/spesialiteit-sessies/speen-ondersteuning/',
         hreflangPath: '/speciality-sessions/weaning-support/',
         caption:
@@ -891,6 +936,9 @@ export const pages = [
       },
       {
         heading: 'Borsvoeding ná een jaar',
+        image: '/images/breastfeeding-after-one-year-perlemama.jpg',
+        imageAlt:
+          'Borsvoeding ná Een Jaar-plakkaat — regstreekse videokonsultasie, 40 minute, R400, met Annette Nel, LC (CBI)',
         path: '/af/spesialiteit-sessies/borsvoeding-na-een-jaar/',
         hreflangPath: '/speciality-sessions/breastfeeding-after-one-year/',
         caption:
@@ -930,6 +978,8 @@ for (const overview of pages.filter((p) => p.type === 'speciality')) {
       h1: s.heading,
       lead: s.caption,
       type: 'speciality-session',
+      image: s.image,
+      imageAlt: s.imageAlt,
       body: s.body || [],
       includes: s.includes,
       faqs: overview.faqs || [],

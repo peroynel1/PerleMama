@@ -222,6 +222,14 @@ export default function ContentPage({ page }) {
         <section className="about">
           <div className="container">
             <div className="about-card content-body-card">
+              {page.image && (
+                <img
+                  className="content-body-image"
+                  src={page.image}
+                  alt={page.imageAlt || page.h1}
+                  loading="lazy"
+                />
+              )}
               {page.body.map((para) => (
                 <p key={para.slice(0, 48)} className="about-text">
                   {para}

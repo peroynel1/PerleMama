@@ -113,10 +113,15 @@ ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit i
           .join('\n')}</ul>`
       : ''
 
+  const flyer = page.image
+    ? `<p><img src="${page.image}" alt="${escapeHtml(page.imageAlt || page.h1)}"></p>`
+    : ''
+
   return `
 <article>
   <h1>${escapeHtml(page.h1)}</h1>
   <p>${escapeHtml(page.lead)}</p>
+  ${flyer}
   ${paras}
   ${includes}
   ${resources}
