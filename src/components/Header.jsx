@@ -19,6 +19,24 @@ function Header() {
     }
   }, [menuOpen])
 
+  // Tap away: any tap/click outside the side menu (or Escape) closes it.
+  useEffect(() => {
+    if (!menuOpen) return undefined
+    const onPointerDown = (event) => {
+      if (event.target.closest('#main-nav, .nav-toggle')) return
+      setMenuOpen(false)
+    }
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('pointerdown', onPointerDown)
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [menuOpen])
+
   const closeMenu = () => setMenuOpen(false)
 
   return (
