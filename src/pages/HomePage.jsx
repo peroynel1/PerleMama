@@ -191,7 +191,10 @@ export default function HomePage({ page }) {
                   : 'After a consult I stay available for text-based support so you are not alone with the next question. Rates and packages on enquiry.'}
               </p>
             </div>
-            <div className="service-card">
+            <Link
+              to={af ? '/af/spesialiteit-sessies/voorgeboorte-voorbereiding/' : '/speciality-sessions/pre-birth-prep/'}
+              className="service-card service-card-link"
+            >
               <div className="service-image">
                 <img
                   src="/images/pre-birth-breastfeeding-preparation-pregnant-belly.png"
@@ -214,7 +217,7 @@ export default function HomePage({ page }) {
                   ? 'Leer wat om te verwag in die eerste dae, hoe aanhaking werk, en hoe om jou ondersteuningstelsel gereed te kry — virtueel of in Stellenbosch.'
                   : 'Learn what to expect in the early days, how latch works, and how to set up your support system — online or in Stellenbosch.'}
               </p>
-            </div>
+            </Link>
             <Link
               to={af ? '/af/spesialiteit-sessies/' : '/speciality-sessions/'}
               className="service-card service-card-link"
