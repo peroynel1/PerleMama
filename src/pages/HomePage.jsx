@@ -72,11 +72,6 @@ export default function HomePage({ page }) {
               width={1024}
               height={512}
             />
-            <h2 className="hero-title">
-              {af
-                ? "'Borsmelk is meer werd as pêrels!'"
-                : "'Breastmilk is more valuable than pearls!'"}
-            </h2>
             <p className="hero-subtitle">
               {af
                 ? 'Borsvoeding hoef nie ’n stryd te wees nie — kry die ondersteuning wat jy nodig het om jou baba mooi en voordelig te voed.'
