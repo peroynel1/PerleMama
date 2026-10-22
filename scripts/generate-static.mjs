@@ -97,6 +97,21 @@ ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit i
   const includes = page.includes
     ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}</strong>${escapeHtml(page.includes)}</p>`
     : ''
+  const resources =
+    page.type === 'resources'
+      ? `<h2>${page.lang === 'af' ? 'Onderwerpe' : 'Topics'}</h2>
+<ul>${pages
+          .filter((p) => p.type === 'problem' && p.lang === page.lang)
+          .map((p) => `<li><a href="${p.path}">${escapeHtml(p.h1)}</a></li>`)
+          .join('\n')}</ul>
+<h2>${page.lang === 'af' ? 'Artikels' : 'Articles'}</h2>
+<ul>${blogPosts
+          .map(
+            (p) =>
+              `<li><a href="${blogPath(p.slug)}">${escapeHtml(p.title)}</a> — ${escapeHtml(p.description)}</li>`,
+          )
+          .join('\n')}</ul>`
+      : ''
 
   return `
 <article>
@@ -104,6 +119,7 @@ ${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit i
   <p>${escapeHtml(page.lead)}</p>
   ${paras}
   ${includes}
+  ${resources}
   ${sections}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>
@@ -210,19 +226,24 @@ for (const page of pages) {
   writePage(page)
 }
 
-const blogIndexPage = {
-  path: '/blog/',
-  lang: 'en',
-  hreflangPath: '/blog/',
-  title: `Breastfeeding blog | ${SITE_NAME}`,
-  description:
-    'Evidence-informed breastfeeding articles from Annette Nel, LC (CBI) — mastitis, pumping, and practical help for Stellenbosch and South Africa.',
-  h1: 'Blog',
-  lead: 'Practical, evidence-informed notes for breastfeeding parents.',
-  body: blogPosts.map((p) => `${p.title} — ${blogPath(p.slug)}`),
-  faqs: [],
-}
-writePage(blogIndexPage)
+// /blog/ used to be the article index — articles now live under Help topics.
+// Static redirect so the old URL keeps working on GitHub Pages.
+mkdirSync(join(dist, 'blog'), { recursive: true })
+writeFileSync(
+  join(dist, 'blog', 'index.html'),
+  `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Articles | PerleMama Lactation</title>
+<link rel="canonical" href="${SITE_URL}/resources/#articles">
+<meta http-equiv="refresh" content="0; url=/resources/#articles">
+<meta name="robots" content="noindex, follow">
+</head>
+<body><p>Articles have moved to <a href="/resources/#articles">Help topics — Articles</a>.</p></body>
+</html>
+`,
+)
 
 for (const post of blogPosts) {
   writePage({
@@ -247,7 +268,6 @@ copyFileSync(join(dist, 'index.html'), join(dist, '404.html'))
 // sitemap + robots + llms into dist (also kept in public for vite copy)
 const allLocs = [
   ...pages.map((p) => absoluteUrl(p.path)),
-  `${SITE_URL}/blog/`,
   ...blogPosts.map((p) => blogAbsoluteUrl(p.slug)),
 ]
 const urls = allLocs.map((loc) => `  <url><loc>${loc}</loc></url>`).join('\n')
@@ -294,7 +314,7 @@ Do not create thin keyword-only location URLs that duplicate service pages (e.g.
 writeFileSync(join(dist, 'llms.txt'), llms)
 
 console.log(
-  `Wrote ${pages.length + 1 + blogPosts.length} static pages + sitemap/robots/llms.txt`,
+  `Wrote ${pages.length + blogPosts.length} static pages + sitemap/robots/llms.txt`,
 )
 if (!existsSync(join(dist, 'assets'))) {
   console.warn('Warning: dist/assets missing — run vite build first')

@@ -4,6 +4,7 @@ import BookingForm from '../components/BookingForm'
 import { QuoteStrip, QuoteGallery } from '../components/QuoteFiller'
 import { testimonials } from '../data/testimonials'
 import { getProblemPages, getServicePages, getSpecialitySessionPages } from '../data/pages'
+import { blogPosts, blogPath } from '../data/blog'
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
@@ -288,6 +289,28 @@ export default function ContentPage({ page }) {
                     <p>{p.lead}</p>
                   </Link>
                 ))}
+              </div>
+            </div>
+          </section>
+          <section id="articles" className="services">
+            <div className="container">
+              <h2 className="section-title">{af ? 'Artikels' : 'Articles'}</h2>
+              <div className="services-grid content-topics-grid">
+                {[...blogPosts]
+                  .sort((a, b) => b.date.localeCompare(a.date))
+                  .map((post) => (
+                    <Link
+                      key={post.slug}
+                      to={blogPath(post.slug)}
+                      className="service-card service-card-link content-topic-card"
+                    >
+                      <p className="content-eyebrow" style={{ marginBottom: '0.5rem' }}>
+                        {post.date} · {post.lang === 'af' ? 'Afrikaans' : 'English'}
+                      </p>
+                      <h3>{post.title}</h3>
+                      <p>{post.description}</p>
+                    </Link>
+                  ))}
               </div>
             </div>
           </section>

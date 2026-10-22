@@ -52,7 +52,7 @@ export default function HomePage({ page }) {
   const onlinePath = af ? '/af/aanlyn-konsultasie/' : '/online-consultation/'
   const clinicPath = af ? '/af/stellenbosch-kliniek/' : '/stellenbosch-clinic/'
   const homeVisitPath = af ? '/af/huisbesoeke/' : '/home-visits/'
-  const resourcesPath = '/blog/'
+  const resourcesPath = af ? '/af/hulpbronne/#articles' : '/resources/#articles'
 
   return (
     <main>

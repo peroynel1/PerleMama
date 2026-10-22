@@ -91,9 +91,6 @@ function Header() {
           <Link to={`${prefix}${af ? '/hulpbronne/' : '/resources/'}`} onClick={closeMenu}>
             {af ? 'Hulp' : 'Help topics'}
           </Link>
-          <Link to="/blog/" onClick={closeMenu}>
-            Blog
-          </Link>
           <Link to={`${prefix}${af ? '/vind-my/' : '/find-me/'}`} onClick={closeMenu}>
             {af ? 'Vind my' : 'Find me'}
           </Link>

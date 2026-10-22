@@ -5,7 +5,6 @@ import Footer from './components/Footer'
 import WhatsAppSticky from './components/WhatsAppSticky'
 import ContentPage from './pages/ContentPage'
 import HomePage from './pages/HomePage'
-import BlogIndex from './pages/BlogIndex'
 import BlogArticle from './pages/BlogArticle'
 import { pages, getPageByPath } from './data/pages'
 import { getPost } from './data/blog'
@@ -22,11 +21,18 @@ function PageById({ page }) {
 }
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash)
+      if (el) {
+        el.scrollIntoView()
+        return
+      }
+    }
     window.scrollTo(0, 0)
-  }, [pathname])
+  }, [pathname, hash])
 
   return null
 }
@@ -46,7 +52,7 @@ function Shell() {
       <ScrollToTop />
       <Header />
       <Routes>
-        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog" element={<Navigate to="/resources/#articles" replace />} />
         <Route path="/blog/:slug" element={<BlogArticle />} />
         {pages.map((p) => (
           <Route key={p.id} path={routePath(p.path)} element={<PageById page={p} />} />

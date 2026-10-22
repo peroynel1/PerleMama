@@ -7,9 +7,10 @@ import { WHATSAPP_URL, SITE_NAME } from '../config/site'
 export default function BlogArticle() {
   const { slug } = useParams()
   const post = getPost(slug)
-  if (!post) return <Navigate to="/blog/" replace />
+  if (!post) return <Navigate to="/resources/#articles" replace />
 
   const af = post.lang === 'af'
+  const articlesPath = af ? '/af/hulpbronne/#articles' : '/resources/#articles'
   const page = {
     path: blogPath(post.slug),
     lang: post.lang,
@@ -27,7 +28,7 @@ export default function BlogArticle() {
         <div className="container">
           <div className="hero-content">
             <p className="content-eyebrow">
-              {post.date} · <Link to="/blog/">Blog</Link>
+              {post.date} · <Link to={articlesPath}>{af ? 'Artikels' : 'Articles'}</Link>
             </p>
             <h1 className="hero-title content-page-title">{post.h1}</h1>
             <p className="hero-subtitle">{post.lead}</p>
@@ -79,7 +80,7 @@ export default function BlogArticle() {
               <a href={WHATSAPP_URL} className="cta-button" target="_blank" rel="noopener noreferrer">
                 WhatsApp
               </a>
-              <Link to="/blog/" className="cta-button">
+              <Link to={articlesPath} className="cta-button">
                 {af ? 'Meer artikels' : 'More articles'}
               </Link>
             </div>
