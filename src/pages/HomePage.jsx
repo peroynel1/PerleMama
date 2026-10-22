@@ -58,23 +58,20 @@ export default function HomePage({ page }) {
     <main>
       <Seo page={page} />
 
-      <section className="master-banner" aria-label="PerleMama Lactation">
-        <img
-          src="/images/perlemama-lactation-welcome-banner-breastfeeding-more-valuable-than-pearls.jpg"
-          alt={
-            af
-              ? 'Welkom by PerleMama Lactation — borsmelk is meer werd as pêrels'
-              : 'Welcome to PerleMama Lactation — breastfeeding is more valuable than pearls'
-          }
-          className="master-banner-img"
-          width={1024}
-          height={512}
-        />
-      </section>
-
       <section id="home" className="hero">
         <div className="container">
           <div className="hero-content">
+            <img
+              src="/images/perlemama-lactation-welcome-banner-breastfeeding-more-valuable-than-pearls.jpg"
+              alt={
+                af
+                  ? 'Welkom by PerleMama Lactation — borsmelk is meer werd as pêrels'
+                  : 'Welcome to PerleMama Lactation — breastfeeding is more valuable than pearls'
+              }
+              className="hero-banner-img"
+              width={1024}
+              height={512}
+            />
             <h2 className="hero-title">
               {af
                 ? "'Borsmelk is meer werd as pêrels!'"

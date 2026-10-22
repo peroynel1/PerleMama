@@ -138,19 +138,13 @@
   backdrop-filter: blur(5px);
 }
 
-/* Master banner (homepage, above hero) */
-.master-banner {
-  line-height: 0;
-}
-
-.master-banner-img {
+/* Banner inside homepage hero text block */
+.hero-banner-img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.master-banner + .hero {
-  padding-top: 3rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
 }
 
 /* Hero Section - Glass Morphism */
