@@ -231,7 +231,37 @@ export default function ContentPage({ page }) {
         </section>
       )}
 
-      {(page.type === 'problem' || page.type === 'service' || page.type === 'about') && (
+      {page.sections?.length > 0 && (
+        <section className="about">
+          <div className="container">
+            <div className="about-card content-body-card">
+              {page.sections.map((s) => (
+                <article key={s.heading} className="speciality-session">
+                  <h2 className="speciality-session-title">{s.heading}</h2>
+                  {(s.body || []).map((para) => (
+                    <p key={para.slice(0, 48)} className="about-text">
+                      {para}
+                    </p>
+                  ))}
+                  {s.includes && (
+                    <p className="speciality-includes">
+                      <strong>
+                        {af ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}
+                      </strong>
+                      {s.includes}
+                    </p>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {(page.type === 'problem' ||
+        page.type === 'service' ||
+        page.type === 'about' ||
+        page.type === 'speciality') && (
         <QuoteStrip seed={page.id} lang={page.lang} />
       )}
 
@@ -292,7 +322,9 @@ export default function ContentPage({ page }) {
 
       {page.type !== 'connect' && <ReviewStrip lang={page.lang} />}
 
-      {(page.type === 'problem' || page.type === 'service') && <BookCta lang={page.lang} />}
+      {(page.type === 'problem' || page.type === 'service' || page.type === 'speciality') && (
+        <BookCta lang={page.lang} />
+      )}
     </main>
   )
 }

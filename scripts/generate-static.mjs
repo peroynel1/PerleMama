@@ -70,7 +70,7 @@ function buildBody(page) {
   <ul>
     <li>${af ? 'Teks-ondersteuning' : 'Text support'}</li>
     <li>${af ? 'Voorgeborete voorbereiding' : 'Pre-birth prep'}</li>
-    <li><a href="${af ? '/af/terug-werk-toe/' : '/returning-to-work-pumping/'}">${af ? 'Spesialiteit-sessie' : 'Speciality session'}</a></li>
+    <li><a href="${af ? '/af/spesialiteit-sessies/' : '/speciality-sessions/'}">${af ? 'Spesialiteit-sessie' : 'Speciality session'}</a></li>
   </ul>
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>
@@ -79,11 +79,20 @@ function buildBody(page) {
 </article>`
   }
 
+  const sections = (page.sections || [])
+    .map(
+      (s) => `<h2>${escapeHtml(s.heading)}</h2>
+${(s.body || []).map((p) => `<p>${escapeHtml(p)}</p>`).join('\n')}
+${s.includes ? `<p><strong>${page.lang === 'af' ? 'Hierdie sessie/pakket sluit in: ' : 'This session/package includes: '}</strong>${escapeHtml(s.includes)}</p>` : ''}`,
+    )
+    .join('\n')
+
   return `
 <article>
   <h1>${escapeHtml(page.h1)}</h1>
   <p>${escapeHtml(page.lead)}</p>
   ${paras}
+  ${sections}
   ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ''}
   <p><a href="${WHATSAPP_URL}">WhatsApp ${escapeHtml(PHONE_DISPLAY)}</a></p>
   <p><a href="${escapeHtml(page.lang === 'af' ? '/af/boek/' : '/book/')}">${page.lang === 'af' ? 'Bespreek' : 'Book'}</a></p>

@@ -1152,6 +1152,32 @@
   display: block;
 }
 
+.speciality-session {
+  margin-bottom: 2.5rem;
+}
+
+.speciality-session:last-child {
+  margin-bottom: 0;
+}
+
+.speciality-session-title {
+  font-family: 'Tan Pearl', 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.speciality-includes {
+  font-family: 'Glacial Indifference', 'Source Sans 3', sans-serif;
+  color: #555;
+  line-height: 1.7;
+  background: rgba(255, 255, 255, 0.45);
+  border-left: 3px solid rgba(154, 107, 63, 0.6);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+}
+
 .content-topics-grid {
   margin-top: 2rem;
 }

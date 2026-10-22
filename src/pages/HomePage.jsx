@@ -216,7 +216,7 @@ export default function HomePage({ page }) {
               </p>
             </div>
             <Link
-              to={af ? '/af/terug-werk-toe/' : '/returning-to-work-pumping/'}
+              to={af ? '/af/spesialiteit-sessies/' : '/speciality-sessions/'}
               className="service-card service-card-link"
             >
               <div className="service-image">
@@ -234,12 +234,12 @@ export default function HomePage({ page }) {
               <p>
                 <strong>
                   {af
-                    ? 'Terug werk toe, pomp, refluks, en meer.'
-                    : 'Back to work, pumping, reflux, and more.'}
+                    ? 'Speen, refluks, vrugbaarheid, vaste kos, en meer.'
+                    : 'Weaning, reflux, fertility, solids, and more.'}
                 </strong>
                 {af
-                  ? 'Gefokusde sessies vir spesifieke uitdagings — soos terug werk toe en pomp — met ’n duidelike plan en opvolg.'
-                  : 'Focused sessions for specific challenges — like returning to work and pumping — with a clear plan and follow-up.'}
+                  ? 'Gefokusde sessies vir spesifieke uitdagings — soos speen, refluks en die begin van vaste kos — met ’n duidelike plan en opvolg.'
+                  : 'Focused sessions for specific challenges — like weaning, reflux, and starting solids — with a clear plan and follow-up.'}
               </p>
             </Link>
           </div>
